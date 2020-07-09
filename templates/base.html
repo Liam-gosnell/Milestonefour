@@ -15,12 +15,15 @@
    
     {% block corecss %}
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css2?family=Crete+Round&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="{% static 'css/base.css' %}">
     {% endblock %}
 
     {% block extra_css %}
     {% endblock %}
 
     {% block corejs %}
+        <script src="https://kit.fontawesome.com/4c93af52a0.js" crossorigin="anonymous"></script>
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
@@ -34,10 +37,10 @@
 
   <body>
     <header class="container-fluid fixed-top">
-        <div class="row">
-            <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
-                <a href="{% url 'home' %" class="nav-link main-logo-link">
-                    <h2 class="logo-font text-black"><strong>Drop</strong>Design</h2>
+        <div id="topnav" class="row bg-white  d-none d-lg-flex">
+            <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center  text-lg-left">
+                <a href="{% url 'home' %" class="nav-link btn-black main-logo-link">
+                    <h3 class="logo-font text-white mb-3 mt-3 ml-3 mr-3"><strong>Drop</strong>Design</h3>
                 </a>
             </div>
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
@@ -92,6 +95,61 @@
                     </li>
                 </ul>
             </div>
+        </div>
+        
+        <div class=" text-center col-12 col-lg-8 my-auto py-1 py-lg-0">
+                <ul class="list-inline list-unstyled text-center text-lg-right my-0">
+                     <li class="list-inline-item">
+                        <a class="text-black nav-link" href="">
+                            <div class="text-center">
+                                <div><i class="fas fa-info-circle fa-lg text-white"></i></div>
+                                <p class="my-0 text-white">
+                                    About
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                     <li class="list-inline-item">
+                        <a class="text-black nav-link" href="">
+                            <div class="text-center">
+                                <div><i class="fas fa-fire fa-lg text-white"></i></div>
+                                <p class="my-0 text-white">
+                                    Popular
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                     <li class="list-inline-item">
+                        <a class="text-black nav-link" href="">
+                            <div class="text-center">
+                                <div><i class="far fa-copyright fa-lg text-white"></i></div>
+                                <p class="my-0 text-white">
+                                    Branding
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                     <li class="list-inline-item">
+                        <a class="text-black nav-link" href="">
+                            <div class="text-center">
+                                <div><i class="fas fa-paint-brush fa-lg text-white"></i></div>
+                                <p class="my-0 text-white">
+                                    Designs
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="text-black nav-link" href="">
+                            <div class="text-center">
+                                <div><i class="fas fa-quote-right fa-lg text-white"></i></div>
+                                <p class="my-0 text-white">
+                                    Quick Quote
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
         </div>
     </header>
 
