@@ -21,10 +21,6 @@ body {
     width: 1.5rem;
 }
 
-.logo-font {
-    text-transform: uppercase;
-}
-
 .main-logo-link {
     width: fit-content;
 }
@@ -58,14 +54,28 @@ body {
     color: #000 !important;
 }
 
+.bg-black{
+    background: #000 !important;
+    color: #fff !important;
+}
 
 .text-white {
     color: #fff !important;
 }
 
+.title-green {
+    color: #438a5e!important;
+}
+
+.bg-green{
+    background: #438a5e!important;
+}
+
 .border-black {
     border: 1px solid black !important;
 }
+
+
 
 /* -------------------------------- Media Queries */
 
