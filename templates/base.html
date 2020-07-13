@@ -37,15 +37,11 @@
 
   <body>
     <header class="container-fluid fixed-top">
-        <div id="delivery-banner" class="row text-center">
-            <div class="col bg-black text-white">
-                <h6 class=" my-1">Free delivery on orders over €{{ free_shipping_threshold }}!</h6>                
-            </div>            
-        </div>
-        <div id="topnav" class="row d-none d-lg-flex">
+        
+        <div id="topnav" class="row d-none bg-black d-lg-flex">
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center  text-lg-left">
                 <a href="{% url 'home' %" class="nav-link  main-logo-link">
-                    <h3 class="text-white mb-3 mt-3 ml-3 mr-3"><strong class="text-white">Design</strong>Drop</h3>
+                    <h3 class="text-white mb-3 mt-3 ml-3 mr-3"><strong class="text-white">Design</strong>DROP</h3>
                 </a>
             </div>
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
@@ -101,14 +97,19 @@
                 </ul>
             </div>
         </div>
-        <div class="row bg-white">
-            <nav class="navbar navbar-expand-lg navbar-light w-100">
+        <div class="row bg-black">
+            <nav class="navbar navbar-expand-lg navbar-dark w-100">
                 <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 {% include 'includes/mobile-top-header.html' %}
                 {% include 'includes/main-nav.html' %}
             </nav>
+        </div>
+        <div id="delivery-banner" class="row text-center">
+            <div class="col bg-green-2 text-white">
+                <h6 class=" my-1">Free delivery on orders over €{{ free_shipping_threshold }}!</h6>                
+            </div>            
         </div>
     </header>
 
@@ -130,57 +131,4 @@
 </html>
 
 
- <!-- <div class=" text-center col-12 col-lg-8 my-auto py-1 py-lg-0">
-                <ul class="list-inline list-unstyled text-center text-lg-right my-0">
-                     <li class="list-inline-item">
-                        <a class="text-black nav-link" href="">
-                            <div class="text-center">
-                                <div><i class="fas fa-info-circle fa-lg text-white"></i></div>
-                                <p class="my-0 text-white">
-                                    About
-                                </p>
-                            </div>
-                        </a>
-                    </li>
-                     <li class="list-inline-item">
-                        <a class="text-black nav-link" href="">
-                            <div class="text-center">
-                                <div><i class="fas fa-fire fa-lg text-white"></i></div>
-                                <p class="my-0 text-white">
-                                    Popular
-                                </p>
-                            </div>
-                        </a>
-                    </li>
-                     <li class="list-inline-item">
-                        <a class="text-black nav-link" href="">
-                            <div class="text-center">
-                                <div><i class="far fa-copyright fa-lg text-white"></i></div>
-                                <p class="my-0 text-white">
-                                    Branding
-                                </p>
-                            </div>
-                        </a>
-                    </li>
-                     <li class="list-inline-item">
-                        <a class="text-black nav-link" href="">
-                            <div class="text-center">
-                                <div><i class="fas fa-paint-brush fa-lg text-white"></i></div>
-                                <p class="my-0 text-white">
-                                    Designs
-                                </p>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a class="text-black nav-link" href="">
-                            <div class="text-center">
-                                <div><i class="fas fa-quote-right fa-lg text-white"></i></div>
-                                <p class="my-0 text-white">
-                                    Quick Quote
-                                </p>
-                            </div>
-                        </a>
-                    </li>
-                </ul>
-        </div> -->
+ 
