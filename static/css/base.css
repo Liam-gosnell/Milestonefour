@@ -32,8 +32,38 @@ body {
 }
 
 .btn-black {
-    background: black;
-    color: white;
+   height: 100px;
+    width: 60%;
+    min-width: 255px;
+    border-radius: 8px;
+    margin-top: 2vw;
+    font-size: 1.1rem;
+    font-weight: 300;
+    color: #fff;
+    background-color: #000;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.btn-white {
+   height: 100px;
+    width: 60%;
+    min-width: 255px;
+    border-radius: 8px;
+    margin-top: 2vw;
+    font-size: 1.1rem;
+    font-weight: 300;
+    color: #000;
+    background-color: #fff;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.btn-black-title {
+    font-size: 1.3rem;
+    font-weight: 600;
 }
 
 .get-quote-button:hover,
