@@ -80,6 +80,70 @@ body {
     padding-left: 0px;
 }
 
+/* buttons */
+
+.btn-black:hover {
+  background-color: #fff;
+}
+
+.btn-black-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.btn-black-outline {
+  height: 100px;
+  width: 100%;
+  min-width: 255px;
+  color: #000;
+  border: 2px solid #000;
+  border-radius: 8px;
+  margin-top: 5vw;
+  font-size: 1.1rem;
+  font-weight: 400;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.btn-black-outline:hover {
+  color: #fff;
+  border: 2px solid #fff;
+}
+
+.btn-black-outline-sm {
+  font-size: 1.1rem;
+  width: 100%;
+  color: #000;
+  border: 2px solid #000;
+  border-radius: 6px;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.btn-black-outline-sm:hover {
+  color: #5faf9f;
+  border: 2px solid #5faf9f;
+}
+
+.btn-black-sm {
+  width: 100%;
+  color: #fff;
+  background-color: #000;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.btn-black-sm:hover {
+  background-color: #fff;
+}
+
+
+/* custom coloured text and backgrounds */
 .text-black {
     color: #000 !important;
 }
@@ -105,12 +169,28 @@ body {
     background: #5faf9f!important;
 }
 
-
-
-
-
 .border-black {
     border: 1px solid black !important;
+}
+
+/* Services */
+
+.fixed-card-height {
+  height: 100%;
+  font-size: 1rem;
+}
+
+#services {
+  background-color: e;
+  min-height: 900px;
+  padding-top: 60px;
+}
+
+.service-badge {
+  font-size: 17px;
+  font-weight: 300;
+  vertical-align: 4px;
+  margin-left: 5px;
 }
 
 /* Featurettes

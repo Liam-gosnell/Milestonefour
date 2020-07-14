@@ -33,7 +33,7 @@
       "slug": "complexdesign",
       "description": "Photo's, complex sketches, big artwork, large maps, etc.",
       "price": "16.45",
-      "image": "complexdesign.png",
+      "image": "complex-design.png",
       "clicks": 10,
       "tag": 2
     }
@@ -72,7 +72,7 @@
       "slug": "advice",
       "description": "A successful professional advice for a proper choice.",
       "price": "15.60",
-      "image": "advise.png",
+      "image": "advice.png",
       "clicks": 1,
       "tag": 3
     }
