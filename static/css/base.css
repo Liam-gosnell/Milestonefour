@@ -32,7 +32,7 @@ body {
 }
 
 .btn-black {
-   height: 100px;
+   height: 90px;
     width: 60%;
     min-width: 255px;
     border-radius: 8px;
@@ -47,7 +47,7 @@ body {
 }
 
 .btn-white {
-   height: 100px;
+   height: 90px;
     width: 60%;
     min-width: 255px;
     border-radius: 8px;
