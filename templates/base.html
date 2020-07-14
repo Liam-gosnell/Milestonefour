@@ -38,10 +38,10 @@
   <body>
     <header class="container-fluid fixed-top">
         
-        <div id="topnav" class="row d-none bg-black d-lg-flex">
+        <div id="topnav" class="row d-none bg-white d-lg-flex">
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center  text-lg-left">
                 <a href="{% url 'home' %" class="nav-link  main-logo-link">
-                    <h3 class="text-white mb-3 mt-3 ml-3 mr-3"><strong class="text-white">Design</strong>DROP</h3>
+                    <h3 class="text-dark mb-3 mt-3 ml-3 mr-3"><strong class="text-dark">Design</strong>DROP</h3>
                 </a>
             </div>
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
@@ -61,7 +61,7 @@
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
                 <ul class="list-inline list-unstyled text-center text-lg-right my-0">
                     <li class="list-inline-item dropdown">
-                        <a class="text-white nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a class="text-dark nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <div class="text-center">
                                 <div><i class="fas fa-user fa-lg"></i></div>
                                 <p class="my-0">My Account</p>
@@ -83,8 +83,8 @@
                     <li class="list-inline-item">
                         <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link" href="">
                             <div class="text-center">
-                                <div><i class="fas fa-shopping-bag fa-lg text-white"></i></div>
-                                <p class="my-0 text-white">
+                                <div><i class="fas fa-shopping-bag fa-lg text-dark"></i></div>
+                                <p class="my-0 text-dark">
                                     {% if grand_total %}
                                         €{{ grand_total|floatformat:2 }}
                                     {% else %}
@@ -97,8 +97,8 @@
                 </ul>
             </div>
         </div>
-        <div class="row bg-black">
-            <nav class="navbar navbar-expand-lg navbar-dark w-100">
+        <div class="row bg-white">
+            <nav class="navbar navbar-expand-lg navbar-light w-100">
                 <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -129,36 +129,36 @@
 <footer class="container py-5">
   <div class="row">
     <div class="col-12 col-md">
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block text-white mb-2" role="img" viewBox="0 0 24 24" focusable="false"><title>Product</title><circle cx="12" cy="12" r="10"/><path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"/></svg>
-      <small class="d-block mb-3 text-light">&copy; 2020</small>
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block title-green mb-2" role="img" viewBox="0 0 24 24" focusable="false"><title>Product</title><circle cx="12" cy="12" r="10"/><path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"/></svg>
+      <small class="d-block mb-3 text-dark">&copy; 2020</small>
     </div>
     <div class="col-6 col-md">
-      <h5  class="text-light">Features</h5>
+      <h5  class="title-green">Features</h5>
       <ul class="list-unstyled text-small">
-        <li><a class="text-light" href="#">Cool stuff</a></li>
-        <li><a class="text-light" href="#">Random feature</a></li>
-        <li><a class="text-light" href="#">Team feature</a></li>
-        <li><a class="text-light" href="#">Stuff for developers</a></li>
-        <li><a class="text-light" href="#">Another one</a></li>
-        <li><a class="text-light" href="#">Last time</a></li>
+        <li><a class="text-dark" href="#">Cool stuff</a></li>
+        <li><a class="text-dark" href="#">Random feature</a></li>
+        <li><a class="text-dark" href="#">Team feature</a></li>
+        <li><a class="text-dark" href="#">Stuff for developers</a></li>
+        <li><a class="text-dark" href="#">Another one</a></li>
+        <li><a class="text-dark" href="#">Last time</a></li>
       </ul>
     </div>
     <div class="col-6 col-md">
-      <h5 class="text-light">Resources</h5>
+      <h5 class="title-green">Resources</h5>
       <ul class="list-unstyled text-small">
-        <li><a class="text-light" href="#">Resource</a></li>
-        <li><a class="text-light" href="#">Resource name</a></li>
-        <li><a class="text-light" href="#">Another resource</a></li>
-        <li><a class="text-light" href="#">Final resource</a></li>
+        <li><a class="text-dark" href="#">Resource</a></li>
+        <li><a class="text-dark" href="#">Resource name</a></li>
+        <li><a class="text-dark" href="#">Another resource</a></li>
+        <li><a class="text-dark" href="#">Final resource</a></li>
       </ul>
     </div>
     <div class="col-6 col-md">
-      <h5  class="text-light">Resources</h5>
+      <h5  class="title-green">Resources</h5>
       <ul class="list-unstyled text-small">
-        <li><a class="text-light" href="#">Business</a></li>
-        <li><a class="text-light" href="#">Education</a></li>
-        <li><a class="text-light" href="#">Government</a></li>
-        <li><a class="text-light" href="#">Gaming</a></li>
+        <li><a class="text-dark" href="#">Business</a></li>
+        <li><a class="text-dark" href="#">Education</a></li>
+        <li><a class="text-dark" href="#">Government</a></li>
+        <li><a class="text-dark" href="#">Gaming</a></li>
       </ul>
     </div>
     <div class="col-6 col-md">

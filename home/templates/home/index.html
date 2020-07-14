@@ -2,16 +2,19 @@
 {% load static %}
 
 {% block page_header %}
-    <div class="container header-container">
+
+    <div class="container header-container ">
         <div class="row">
             <div class="col">
                 
             </div>
         </div>
     </div>
+
 {% endblock %}
 
 {% block content %}
+ <section class="header-image">
     <div class="container h-100">
         <div class="row h-100">
             <div class="col-lg-7 col-sm-12 mt-5 p-3 my-auto">
@@ -25,18 +28,18 @@
                 </div>
                 <div class="row ">
                  <div class="col-lg-8 col-sm-8 px-3">
-                   <button type="button" class="btn btn-black" onclick="">
+                   <a class="btn btn-black" href="{% url 'services' %}">
                         <span class="btn-black-title">
                             Let us help you!
                         </span>
                         <br>
                         <span>
-                            Create an account
+                            View our services
                         </span>
-                   </button>
+                   </a>
                  </div>
                  <div class="col-lg-8 col-sm-8 px-3">
-                   <button type="button" class="btn btn-white" onclick="">
+                   <button type="button" class="btn btn-white-outline" onclick="">
                         <span class="btn-black-title">
                             Request a service
                         </span>
@@ -51,6 +54,7 @@
             </div>
         </div>
     </div>
+</section>
     <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
   <div class="col-md-5 p-lg-5 mx-auto my-5">
     <h1 class="display-4 font-weight-normal">Why work with us?</h1>
