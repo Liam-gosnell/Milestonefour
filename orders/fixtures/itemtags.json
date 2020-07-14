@@ -11,7 +11,7 @@
     "model": "orders.itemtag",
     "pk": 2,
     "fields": {
-      "name": "Vectorise",
+      "name": "Design",
       "colour": "danger"
     }
   },
