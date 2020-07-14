@@ -36,7 +36,7 @@ html {
     width: 60%;
     min-width: 255px;
     border-radius: 8px;
-    margin-top: 2vw;
+    
     font-size: 1.1rem;
     font-weight: 300;
     color: #fff;
@@ -202,6 +202,10 @@ html {
 }
 
 /* Services */
+
+.bg-light {
+    background-color: #e4e3e3!important;
+}
 
 #services {
     padding-top: 0px!important;
