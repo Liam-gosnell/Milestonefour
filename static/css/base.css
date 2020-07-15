@@ -4,12 +4,24 @@ html {
     height: 100%;
 }
 
+.navbar{
+    padding: 0;
+}
+
+.header-container{
+    
+}
+
 .header-image {
     background: url('/media/DesignDrop (5).png') no-repeat center center fixed;
     background-size: cover;
-    height: 90vh;
+    height: 100vh;
     color: #555;
     font-family: 'Lato';
+}
+
+.paddingbottom-5{
+    padding-bottom: 80px!important;
 }
 
 /* from Bulma */
@@ -167,6 +179,26 @@ html {
 }
 
 
+.btn-specific{
+    width: 100%;
+  color: #fff;
+  background-color: #000;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.btn-specific:hover {
+  color: #000;
+  background-color: #fff;
+}
+
+
+
+
+
 /* custom coloured text and backgrounds */
 .text-black {
     color: #000 !important;
@@ -303,18 +335,22 @@ html {
     }
 
     .header-container {
-        padding-top: 164px;
+        padding-top: 105px;
     }
 }
 
 /* pad the top a bit when navbar is collapsed on mobile */
 @media (max-width: 991px) {
     .header-container {
-        padding-top: 100px;
+        padding-top: 84px;
     }
 
     body {
         height: calc(100vh - 116px);
     }
+
+    .h-100 {
+    height: 92%!important;
+}
 }
 

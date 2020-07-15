@@ -1,0 +1,24 @@
+[
+  {
+    "model": "portfolio.item",
+    "pk": 1,
+    "fields": {
+      "name": "Tentrax",
+      "slug": "tentrax",
+      "title": "Portraying a lifestyle through Tentrax’s rebrand.",
+      "description": "Tentrax produces lightweight, compact and agile camping trailers built tough in order to be pulled through tough off-road (and on-road) trails. Tentrax prides itself in allowing people to truly go anywhere they want, yet have a safe and comfortable place to sleep. We were tasked with bringing the brand to life in a way that not only appeals to the off-road demographic, but also feels approachable for the casual customer, just looking for a compact camping trailer.",
+      "big-image": "tentrax.jpg",
+      "image-1": "tentrax-1.jpg",
+      "image-2": "tentrax-2.jpg",
+      "image-3": "tentrax-3.jpg",
+      "image-4": "tentrax-4.jpg",
+      "bullet-1": "Brand Identity ",
+      "bullet-2": "Product Illustrations ",
+      "bullet-3": "Logo Design ",
+      "bullet-4": "Brand Guidelines",
+      "approach": "With the branding for Tentrax, we focused on the feeling of both exploration and freedom. We were able to combine both the compass & tire for a monogram that makes it that Tentrax really does you give you the freedom to explore anywhere.The use of bold colours and typefaces allows the branding to stand on its own in an overly saturated market without feeling out of place.",
+      
+    }
+  }
+  
+]
