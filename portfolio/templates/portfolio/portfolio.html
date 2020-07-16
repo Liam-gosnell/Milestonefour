@@ -10,10 +10,32 @@
 {% endblock %}
 
 {% block content %}
-   <div class="container">
+    <div class="overlay"></div>
+   <div class="container-fluid">
         <div class="row">
-            <div class="col">
-                {{ portfolio }}
+            <div class="col text-center padding-80">
+                <h2 class="logo-font">Our Work</h2>
+                <hr class="w-50 mb-1">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="portfolio-container col-10 offset-1">
+                <div class="row mt-1 mb-2">
+                
+                </div>
+                <div class="row">
+                    {% for portfolio in portfolio %}
+                        <div class="col-sm-6 col-md-6 col-lg-8 col-xl-6 padding-none">
+                            <div class="card h-100 border-0">
+                                <a href="">
+                                    <img class="card-img-top img-fluid" src="{{ portfolio.big_image.url }}" alt="{{ portfolio.name }}">
+                                </a>
+                                
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
             </div>
         </div>
    </div>

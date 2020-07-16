@@ -258,6 +258,28 @@ html {
   margin-left: 5px;
 }
 
+/* Portfolio */
+
+.overlay {
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	position: fixed;
+	background: #f7f7f7;
+	z-index: -1;
+}
+
+.padding-80{
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.padding-none{
+    padding: 0!important;
+}
+
+
 /* Featurettes
 ------------------------- */
 

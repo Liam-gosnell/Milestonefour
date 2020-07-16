@@ -34,7 +34,87 @@
       "bullet_2": "Product Illustrations ",
       "bullet_3": "Logo Design ",
       "bullet_4": "Brand Guidelines",
-      "approach": "With the branding for Chimp Apparel, we focused on the feeling of both exploration and freedom. We were able to combine both the gorilla & outdoors for a monogram that makes it that Chimp Apparel really does you give you the freedom to game anywhere."
+      "approach": "With the branding for Chimp Apparel, we focused on the feeling of both exploration and freedom. We were able to combine both the gorilla & outdoors for a monogram that makes it that Chimp Apparel really does you give you the freedom to go anywhere."
+      
+    }
+  },
+
+  {
+    "model": "portfolio.portfolio",
+    "pk": 3,
+    "fields": {
+      "name": "Winking Guru",
+      "slug": "winkingguru",
+      "title": "Photography perfection",
+      "description": "Photography is the art, application and practice of creating durable images by recording light or other electromagnetic radiation, either electronically by means of an image sensor, or chemically by means of a light-sensitive material such as photographic film.",
+      "big_image": "winkingguru.png",
+      "image_1": "winkingguru1.png",
+      "image_2": "winkingguru2.png",
+      "bullet_1": "Brand Identity ",
+      "bullet_2": "Product Illustrations ",
+      "bullet_3": "Logo Design ",
+      "bullet_4": "Brand Guidelines",
+      "approach": "With the branding for Winking Guru, we focused on the feeling of both exploration and freedom. We were able to show that photography is for everyone and it shows that Winking Guru really does you give you the freedom to photograph anywhere."
+      
+    }
+  },
+
+  {
+    "model": "portfolio.portfolio",
+    "pk": 4,
+    "fields": {
+      "name": "Bijou Beat Studios",
+      "slug": "bijoubeatstudios",
+      "title": "Best Studios in the East",
+      "description": "A recording studio is a specialized facility for sound recording, mixing, and audio production of instrumental or vocal musical performances, spoken words, and other sounds. They range in size from a small in-home project studio large enough to record a single singer-guitarist, to a large building with space for a full orchestra of 100 or more musicians. Ideally both the recording and monitoring (listening and mixing) spaces are specially designed by an acoustician or audio engineer to achieve optimum acoustic properties (acoustic isolation or diffusion or absorption of reflected sound echoes that could otherwise interfere with the sound heard by the listener).",
+      "big_image": "bijoubeat.png",
+      "image_1": "bijoubeat1.png",
+      "image_2": "bijouebeat2.png",
+      "bullet_1": "Brand Identity ",
+      "bullet_2": "Product Illustrations ",
+      "bullet_3": "Logo Design ",
+      "bullet_4": "Brand Guidelines",
+      "approach": "With the branding for Bijou Beat Studios, we focused on the feeling of both peace and freedom. We were able to show that music is for everyone and it shows that Bijou beat studios really does you give you the freedom to produce music."
+      
+    }
+  },
+
+  {
+    "model": "portfolio.portfolio",
+    "pk": 5,
+    "fields": {
+      "name": "Gadget Tree",
+      "slug": "gadgettree",
+      "title": "Gadget's Galore",
+      "description": "Gadget's galore is the leading tech gadget seller in Europe! They sell accessories, devices and lots more. They are well known for exceptional quality and great customer service.",
+      "big_image": "gadgettree.png",
+      "image_1": "gadgettree1.png",
+      "image_2": "gadgettree2.png",
+      "bullet_1": "Brand Identity ",
+      "bullet_2": "Product Illustrations ",
+      "bullet_3": "Logo Design ",
+      "bullet_4": "Brand Guidelines",
+      "approach": "With the branding for Gadget Tree, we focused on the feeling of both Plain and Simple. We were able to show that technology is developing rapidy and that Gadget Tree can give you the latest tech."
+      
+    }
+  },
+
+  {
+    "model": "portfolio.portfolio",
+    "pk": 6,
+    "fields": {
+      "name": "Strike 11",
+      "slug": "strike11",
+      "title": "Sports Apparel",
+      "description": "As the global leader in licensed sports merchandise, Strike 11 is changing the way fans purchase their favorite team apparel and jerseys through an innovative, tech-infused approach to making and selling fan gear in today’s on-demand culture.  Powering multi-channel commerce for the world’s biggest sports brands, Strike 11 offers the largest collection of timeless and timely merchandise whether shopping online, on your phone, in stores, in stadiums or on-site at the world’s biggest sporting events.",
+      "big_image": "strike11.png",
+      "image_1": "strike111.png",
+      "image_2": "strike112.png",
+      "bullet_1": "Brand Identity ",
+      "bullet_2": "Product Illustrations ",
+      "bullet_3": "Logo Design ",
+      "bullet_4": "Brand Guidelines",
+      "approach": "With the branding for Strike 11, we focused on the feeling of both Simple and variety. We were able to show that sports is such a widely supported industry and Strike 11 sells the best goods in the world."
       
     }
   }
