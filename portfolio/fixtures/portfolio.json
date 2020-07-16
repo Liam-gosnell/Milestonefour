@@ -1,0 +1,42 @@
+[
+  {
+    "model": "portfolio.portfolio",
+    "pk": 1,
+    "fields": {
+      "name": "Toxik",
+      "slug": "toxik",
+      "title": "Gaming for everyone.",
+      "description": "Toxik Entertainment SA is a French video game company headquartered in Montreuil with several development studios across the world. It publishes games for several video game franchises, including Rayman, Raving Rabbids, Prince of Persia, Assassin's Creed, Far Cry, Just Dance, and Tom Clancy.",
+      "big_image": "toxik.png",
+      "image_1": "toxik1.png",
+      "image_2": "toxik2.png",
+      "bullet_1": "Brand Identity ",
+      "bullet_2": "Product Illustrations ",
+      "bullet_3": "Logo Design ",
+      "bullet_4": "Brand Guidelines",
+      "approach": "With the branding for Toxik, we focused on the feeling of both exploration and freedom. We were able to combine  the gaming for a monogram that makes it that Toxik really does you give you the freedom to game anywhere."
+      
+    }
+  },
+
+  {
+    "model": "portfolio.portfolio",
+    "pk": 2,
+    "fields": {
+      "name": "Chimp Apparel",
+      "slug": "chimpapparel",
+      "title": "The Toughest",
+      "description": "Chimp Apparel is the fastest growing clothing brand in 2020. They are focused on designing and manufacturing the best outdoor gear on the planet. They are completely curelty free and vegan!",
+      "big_image": "chimpapparel.png",
+      "image_1": "chimpapparel1.png",
+      "image_2": "chimpapparel2.png",
+      "bullet_1": "Brand Identity ",
+      "bullet_2": "Product Illustrations ",
+      "bullet_3": "Logo Design ",
+      "bullet_4": "Brand Guidelines",
+      "approach": "With the branding for Chimp Apparel, we focused on the feeling of both exploration and freedom. We were able to combine both the gorilla & outdoors for a monogram that makes it that Chimp Apparel really does you give you the freedom to game anywhere."
+      
+    }
+  }
+  
+]
