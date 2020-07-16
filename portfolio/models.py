@@ -3,6 +3,11 @@ from django.db import models
 # Create your models here.
 
 class Portfolio(models.Model):
+
+    class Meta:
+        verbose_name_plural = 'Portfolio'
+
+        
     name = models.CharField(max_length=254)
     title = models.CharField(max_length=254, null=True, blank=True)
     slug = models.CharField(max_length=254, null=True, blank=True)
