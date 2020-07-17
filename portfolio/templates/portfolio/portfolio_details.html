@@ -17,11 +17,83 @@
                 <div class="image-container">
                     
                         <a href="{{ portfolio.big_image.url }}" target="_blank">
-                            <img class="card-img-top portfolio-images img-fluid" src="{{ portfolio.big_image.url }}" alt="{{ portfolio.name }}">
+                            <img class="card-img-top portfolio-images img-fluid" src="{{ portfolio.portfolio_image.url }}" alt="{{ portfolio.name }}">
                         </a>
                         
                 </div>
             </div>
         </div>
    </div>
+
+    <div class="container">
+         <hr class="featurette-divider">
+          <div class="row">
+            <div class="col-12 pt-4 paddingbottom-5 " >
+                <a class="btn btn-black-sm" href="{% url 'portfolio' %}">
+                    <span class="btn-black-title">
+                        Back to Our work
+                    </span>
+                    <br>
+                    
+                </a>
+            </div>
+          </div>
+    </div>
 {% endblock %}
+
+
+<!-- START THE FEATURETTES --
+<div class="container marketing bg-white ">
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading">We have a plan, <span class="text-muted">even if you don't</span></h2>
+        <p class="lead">New to graphics or not sure what you need? No problem. We’ll guide you through the entire process.</p>
+      </div>
+      <div class="col-md-5">
+        <img class="card-img-top portfolio-image img-fluid" width="500" height="500" src="{{ portfolio.big_image.url }}" alt="{{ portfolio.name }}">
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading">Get more bang for your buck</h2>
+        <p class="lead">Unlike a large agency, our overhead is low so you’re paying for great design and not our hydro bill!</p>
+      </div>
+      <div class="col-md-5 order-md-1">
+       <img class="card-img-top portfolio-image img-fluid" width="500" height="500" src="{{ portfolio.image_1.url }}" alt="{{ portfolio.name }}">
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading">We have a plan, <span class="text-muted">even if you don't</span></h2>
+        <p class="lead">New to graphics or not sure what you need? No problem. We’ll guide you through the entire process.</p>
+      </div>
+      <div class="col-md-5">
+        <img class="card-img-top portfolio-image img-fluid" width="500" height="500" src="{{ portfolio.image_2.url }}" alt="{{ portfolio.name }}">
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    
+    <hr class="featurette-divider">
+    <div class="row">
+            <div class="col-12 pt-4 paddingbottom-5 " >
+                <a class="btn btn-black-sm" href="{% url 'portfolio' %}">
+                    <span class="btn-black-title">
+                        Back to Our work
+                    </span>
+                    <br>
+                    
+                </a>
+            </div>
+        </div>
+</div>
+    <!-- /END THE FEATURETTES -->

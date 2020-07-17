@@ -280,7 +280,7 @@ html {
 }
 
 .portfolio-images {
-    height: 70vh!important;
+    height: 90vh!important;
 }
 
 
@@ -381,6 +381,10 @@ html {
 
 .col-lg-4 {
     padding-left: 16px!important;
+}
+
+.portfolio-images {
+    height: 30vh!important;
 }
 
 }
