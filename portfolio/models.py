@@ -14,6 +14,7 @@ class Portfolio(models.Model):
     description = models.TextField()
     image_url = models.URLField(max_length=1024, null=True, blank=True)
     portfolio_image = models.ImageField(null=True, blank=True)
+    specific_design_drop = models.ImageField(null=True, blank=True)
     big_image = models.ImageField(null=True, blank=True)
     image_1 = models.ImageField(null=True, blank=True)
     image_2 = models.ImageField(null=True, blank=True)

@@ -283,7 +283,20 @@ html {
     height: 90vh!important;
 }
 
+.portfolio-smallier-images {
+    height: 70vh!important;
+}
 
+.portfolio-heading{
+    font-weight: 800;
+  line-height: 1;
+  letter-spacing: -.05rem;
+  margin-bottom: 2rem;
+}
+
+.portfolio-spacing {
+    margin: 5rem;
+}
 
 
 /* Featurettes
@@ -299,6 +312,8 @@ html {
   line-height: 1;
   letter-spacing: -.05rem;
 }
+
+
 
 
 /* RESPONSIVE CSS
@@ -385,6 +400,16 @@ html {
 
 .portfolio-images {
     height: 30vh!important;
+}
+
+.portfolio-smallier-images {
+    height: 30vh!important;
+}
+
+
+.portfolio-spacing {
+    margin: 0rem;
+    margin-top: 2rem;
 }
 
 }
