@@ -279,6 +279,12 @@ html {
     padding: 0!important;
 }
 
+.portfolio-images {
+    height: 70vh!important;
+}
+
+
+
 
 /* Featurettes
 ------------------------- */
@@ -371,6 +377,10 @@ html {
 
 .my-auto {
     margin-top: 410px!important;
+}
+
+.col-lg-4 {
+    padding-left: 16px!important;
 }
 
 }

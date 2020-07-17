@@ -28,8 +28,8 @@
                     {% for portfolio in portfolio %}
                         <div class="col-sm-6 col-md-6 col-lg-8 col-xl-6 padding-none">
                             <div class="card h-100 border-0">
-                                <a href="">
-                                    <img class="card-img-top img-fluid" src="{{ portfolio.big_image.url }}" alt="{{ portfolio.name }}">
+                                <a href="{% url 'portfolio_details' portfolio.id %}">
+                                    <img class="card-img-top portfolio-image img-fluid" src="{{ portfolio.portfolio_image.url }}" alt="{{ portfolio.name }}">
                                 </a>
                                 
                             </div>
@@ -40,3 +40,4 @@
         </div>
    </div>
 {% endblock %}
+

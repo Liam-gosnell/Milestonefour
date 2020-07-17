@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+    <div class="overlay"></div>
+   <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 padding-none">
+                <div class="image-container">
+                    
+                        <a href="{{ portfolio.big_image.url }}" target="_blank">
+                            <img class="card-img-top portfolio-images img-fluid" src="{{ portfolio.big_image.url }}" alt="{{ portfolio.name }}">
+                        </a>
+                        
+                </div>
+            </div>
+        </div>
+   </div>
+{% endblock %}
