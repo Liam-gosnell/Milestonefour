@@ -37,11 +37,15 @@
 
   <body>
     <header class="container-fluid bg-white fixed-top">
-        
+        <div id="delivery-banner" class="row text-center">
+            <div class="col bg-purple text-white">
+                <h6 class=" my-1">Free delivery on orders over €{{ free_shipping_threshold }}!</h6>                
+            </div>            
+        </div>
         <div id="topnav" class="row d-none bg-white d-lg-flex">
             <div class="col-12 col-lg-6 my-auto  py-lg-0 text-center  text-lg-left">
                 <a href="{% url 'home' %" class="nav-link  main-logo-link">
-                    <h3 class="text-dark mb-3 mt-3 ml-3 mr-3"><strong class="text-dark">Design</strong>DROP</h3>
+                    <h3 class="text-dark mb-3 mt-3 ml-3 mr-3">DESIGN DROP</h3>
                 </a>
             </div>
             
@@ -81,7 +85,7 @@
                         <div class="dropdown-menu border-0" aria-labelledby="user-options">
                             {% if request.user.is_authenticated %}
                                 {% if request.user.is_superuser %}
-                                    <a href="" class="dropdown-item">Product Management</a>
+                                    <a href="" class="dropdown-item">Service Management</a>
                                 {% endif %}
                                 <a href="" class="dropdown-item">My Profile</a>
                                 <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
@@ -116,11 +120,6 @@
                 {% include 'includes/mobile-top-header.html' %}
                 {% include 'includes/main-nav.html' %}
             </nav>
-        </div>
-        <div id="delivery-banner" class="row text-center">
-            <div class="col bg-green-2 text-white">
-                <h6 class=" my-1">Free delivery on orders over €{{ free_shipping_threshold }}!</h6>                
-            </div>            
         </div>
     </header>
 

@@ -21,6 +21,10 @@ html {
     padding-bottom: 80px!important;
 }
 
+.bg-purple {
+    background-color: #5e17eb;
+}
+
 
 
 /* from Bulma */
@@ -136,8 +140,8 @@ html {
 }
 
 .btn-white-outline:hover {
-  color: #05dfd7;
-  border: 2px solid #05dfd7;
+  color: #5faf9f;
+  border: 2px solid #5faf9f;
 }
 
 .btn-black-outline:hover {
@@ -164,7 +168,7 @@ html {
 .btn-green-sm {
   width: 100%;
   color: #fff;
-  background-color: #5faf9f;
+  background-color: #5e17eb;
   border-radius: 6px;
   font-size: 1.1rem;
   -webkit-transition: 0.3s;
@@ -173,7 +177,7 @@ html {
 }
 
 .btn-green-sm:hover {
-    color: #5faf9f;
+    color: #5e17eb;
   background-color: #fff;
 }
 
