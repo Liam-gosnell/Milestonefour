@@ -33,17 +33,19 @@
                 <p class="lead">{{ portfolio.description }}</p>
             </div>
             <div class="col-md-5 ">
+                <h1 class="portfolio-heading">What we did</h1>
+                
                 <ul>
-                    <li class="">
+                    <li class="bullet-item">
                         {{ portfolio.bullet_1 }}
                     </li>
-                    <li>
+                    <li class="bullet-item">
                         {{ portfolio.bullet_2 }}
                     </li>
-                    <li>
+                    <li class="bullet-item">
                         {{ portfolio.bullet_3 }}
                     </li>
-                    <li>
+                    <li class="bullet-item">
                         {{ portfolio.bullet_4 }}
                     </li>
                 </ul>
@@ -55,16 +57,40 @@
         <div class="row">
             <div class="col-12 padding-none">
                 <div class="image-container">
+                    <img class="card-img-top portfolio-images img-fluid" src="{{ portfolio.image_1.url }}" alt="{{ portfolio.name }}">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mb-4">
+        <div class="row portfolio-spacing">
+            <div class="col-12">
+                <h1 class="portfolio-heading">Approach</h1>
+
+                <p class="lead">{{ portfolio.approach }}</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 padding-none">
+                <div class="image-container">
                     <img class="card-img-top portfolio-images img-fluid" src="{{ portfolio.image_2.url }}" alt="{{ portfolio.name }}">
                 </div>
             </div>
         </div>
     </div>
 
+
     <div class="container-fluid">
         <div class="row">
-            <div class="col-6 padding-none">
-                <img class="card-img-top portfolio-smallier-images img-fluid" src="{{ portfolio.specific_design_drop.url }}" alt="{{ portfolio.name }}">
+            <div class="col-12 padding-none">
+                <div class="image-container">
+                     <img class="card-img-top portfolio-images img-fluid" src="{{ portfolio.specific_design_drop.url }}" alt="{{ portfolio.name }}">
+                </div>
             </div>
             <div class="col-6 padding-none">
                 
@@ -75,13 +101,11 @@
     <div class="container">
          
           <div class="row">
-            <div class="col-12 pt-4 paddingbottom-5 " >
-                <a class="btn btn-black-sm" href="{% url 'portfolio' %}">
+            <div class="col-12 padding-60" >
+                <a class="btn btn-green-sm" href="{% url 'portfolio' %}">
                     <span class="btn-black-title">
                         Back to Our work
                     </span>
-                    <br>
-                    
                 </a>
             </div>
           </div>
@@ -89,58 +113,3 @@
 {% endblock %}
 
 
-<!-- START THE FEATURETTES --
-<div class="container marketing bg-white ">
-    <hr class="featurette-divider">
-
-    <div class="row featurette">
-      <div class="col-md-7">
-        <h2 class="featurette-heading">We have a plan, <span class="text-muted">even if you don't</span></h2>
-        <p class="lead">New to graphics or not sure what you need? No problem. We’ll guide you through the entire process.</p>
-      </div>
-      <div class="col-md-5">
-        <img class="card-img-top portfolio-image img-fluid" width="500" height="500" src="{{ portfolio.big_image.url }}" alt="{{ portfolio.name }}">
-      </div>
-    </div>
-
-    <hr class="featurette-divider">
-
-    <div class="row featurette">
-      <div class="col-md-7 order-md-2">
-        <h2 class="featurette-heading">Get more bang for your buck</h2>
-        <p class="lead">Unlike a large agency, our overhead is low so you’re paying for great design and not our hydro bill!</p>
-      </div>
-      <div class="col-md-5 order-md-1">
-       <img class="card-img-top portfolio-image img-fluid" width="500" height="500" src="{{ portfolio.image_1.url }}" alt="{{ portfolio.name }}">
-      </div>
-    </div>
-
-    <hr class="featurette-divider">
-
-    <div class="row featurette">
-      <div class="col-md-7">
-        <h2 class="featurette-heading">We have a plan, <span class="text-muted">even if you don't</span></h2>
-        <p class="lead">New to graphics or not sure what you need? No problem. We’ll guide you through the entire process.</p>
-      </div>
-      <div class="col-md-5">
-        <img class="card-img-top portfolio-image img-fluid" width="500" height="500" src="{{ portfolio.image_2.url }}" alt="{{ portfolio.name }}">
-      </div>
-    </div>
-
-    <hr class="featurette-divider">
-
-    
-    <hr class="featurette-divider">
-    <div class="row">
-            <div class="col-12 pt-4 paddingbottom-5 " >
-                <a class="btn btn-black-sm" href="{% url 'portfolio' %}">
-                    <span class="btn-black-title">
-                        Back to Our work
-                    </span>
-                    <br>
-                    
-                </a>
-            </div>
-        </div>
-</div>
-    <!-- /END THE FEATURETTES -->

@@ -42,17 +42,27 @@
 
    <div class="container">
          <hr class="featurette-divider">
+         <div class="row">
+            <div class="col-12" >
+                <a class="btn btn-specific mb-4" href="{% url 'services' %}">
+                    <span class="btn-black-title">
+                        View our Services
+                    </span>
+                    <br>
+                </a>
+            </div>
+          </div>
           <div class="row">
-            <div class="col-12 pt-4 paddingbottom-5 " >
-                <a class="btn btn-black-sm" href="{% url 'home' %}">
+            <div class="col-12 mb-4 " >
+                <a class="btn btn-green-sm" href="{% url 'home' %}">
                     <span class="btn-black-title">
                         Back to Home
                     </span>
                     <br>
-                    
                 </a>
             </div>
           </div>
+          
     </div>
 {% endblock %}
 

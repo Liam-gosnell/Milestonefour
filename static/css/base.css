@@ -21,6 +21,8 @@ html {
     padding-bottom: 80px!important;
 }
 
+
+
 /* from Bulma */
 .icon {
     align-items: center;
@@ -143,7 +145,7 @@ html {
   border: 2px solid #fff;
 }
 
-.btn-black-outline-sm {
+.btn-green-outline-sm {
   font-size: 1.1rem;
   width: 100%;
   color: #000;
@@ -154,12 +156,12 @@ html {
   transition: 0.3s;
 }
 
-.btn-black-outline-sm:hover {
-  color: #5faf9f;
-  border: 2px solid #5faf9f;
+.btn-green-outline-sm:hover {
+  color: #fe346e;
+  border: 2px solid #fe346e;
 }
 
-.btn-black-sm {
+.btn-green-sm {
   width: 100%;
   color: #fff;
   background-color: #5faf9f;
@@ -170,9 +172,9 @@ html {
   transition: 0.3s;
 }
 
-.btn-black-sm:hover {
-    color: #fff;
-  background-color: #000;
+.btn-green-sm:hover {
+    color: #5faf9f;
+  background-color: #fff;
 }
 
 
@@ -191,9 +193,6 @@ html {
   color: #000;
   background-color: #fff;
 }
-
-
-
 
 
 /* custom coloured text and backgrounds */
@@ -275,6 +274,11 @@ html {
     padding-bottom: 80px;
 }
 
+.padding-60{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
 .padding-none{
     padding: 0!important;
 }
@@ -296,6 +300,10 @@ html {
 
 .portfolio-spacing {
     margin: 5rem;
+}
+
+.bullet-item {
+    font-size: 1.5rem;
 }
 
 
