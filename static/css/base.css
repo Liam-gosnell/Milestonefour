@@ -261,6 +261,10 @@ html {
   margin-left: 5px;
 }
 
+.details-paragraph {
+    font-size: 1.5rem;
+}
+
 /* Portfolio */
 
 .overlay {
@@ -304,6 +308,11 @@ html {
 
 .portfolio-spacing {
     margin: 5rem;
+}
+
+.price-spacing{
+    
+    margin-left: 5rem;
 }
 
 .bullet-item {
@@ -422,6 +431,16 @@ html {
 .portfolio-spacing {
     margin: 0rem;
     margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.price-spacing {
+    margin-left: 0!important;
+    margin-top: 1rem;
+}
+
+.details-paragraph {
+    font-size: 1.2rem;
 }
 
 }
