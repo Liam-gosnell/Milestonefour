@@ -16,6 +16,8 @@
     {% block corecss %}
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css2?family=Crete+Round&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css" />
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
         <link rel="stylesheet" href="{% static 'css/base.css' %}">
     {% endblock %}
 
@@ -27,6 +29,7 @@
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     {% endblock %}
 
     {% block extra_js %}
@@ -45,7 +48,7 @@
        <div id="topnav" class="row bg-white pt-lg-2 d-none d-lg-flex">
             <div class="col-6 col-lg-6 my-auto py-1 py-lg-0 text-center text-lg-left">
                 <a href="{% url 'home' %}" class="nav-link main-logo-link">
-                    <h2 class="logo-font text-black my-0"><strong>DESIGNDROP</strong> </h2>
+                    <h3 class="logo-font text-black my-0"><strong>DESIGNDROP</strong> </h3>
                 </a>
             </div>
             
@@ -145,82 +148,3 @@
 </body>
 </html>
 
-<!-- 
- <div id="topnav" class="row d-none bg-white d-lg-flex">
-            <div class="col-12 col-lg-6 my-auto  py-lg-0 text-center  text-lg-left">
-                <a href="{% url 'home' %" class="nav-link  main-logo-link">
-                    <h3 class="text-dark mb-3 mt-3 ml-3 mr-3">DESIGN DROP</h3>
-                </a>
-            </div>
-   <div class="col-12 col-lg-6 my-auto py-1 py-lg-0">
-                
-                <ul class="list-inline list-unstyled text-center text-lg-right my-0">
-                    
-                    <li class="list-inline-item dropdown">
-                        <a class="nav-link" href="{% url 'portfolio' %}">
-                            <div class="text-center">
-                                <div><i class="fas fa-briefcase fa-lg text-dark"></i></div>
-                                <p class="my-0 text-dark">
-                                    Our Work
-                                </p>
-                            </div>
-                        </a>
-                    </li>
-
-                    <li class="list-inline-item dropdown">
-                        <a class="nav-link" href="{% url 'services' %}">
-                            <div class="text-center">
-                                <div><i class="fas fa-pen-fancy fa-lg text-dark"></i></div>
-                                <p class="my-0 text-dark">
-                                    Services
-                                </p>
-                            </div>
-                        </a>
-                    </li>
-                    
-                    <li class="list-inline-item dropdown">
-                        <a class="text-dark nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <div class="text-center">
-                                <div><i class="fas fa-user fa-lg"></i></div>
-                                <p class="my-0">My Account</p>
-                            </div>
-                        </a>
-                        <div class="dropdown-menu border-0" aria-labelledby="user-options">
-                            {% if request.user.is_authenticated %}
-                                {% if request.user.is_superuser %}
-                                    <a href="" class="dropdown-item">Service Management</a>
-                                {% endif %}
-                                <a href="" class="dropdown-item">My Profile</a>
-                                <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
-                            {% else %}
-                                <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
-                                <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
-                            {% endif %}
-                        </div>
-                    </li>
-                    <li class="list-inline-item">
-                        <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link" href="">
-                            <div class="text-center">
-                                <div><i class="fas fa-shopping-bag fa-lg text-dark"></i></div>
-                                <p class="my-0 text-dark">
-                                    {% if grand_total %}
-                                        €{{ grand_total|floatformat:2 }}
-                                    {% else %}
-                                        €0.00
-                                    {% endif %}
-                                </p>
-                            </div>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="row">
-            <nav class="navbar navbar-expand-lg  navbar-light w-100">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                {% include 'includes/mobile-top-header.html' %}
-                {% include 'includes/main-nav.html' %}
-            </nav>
-        </div> -->
