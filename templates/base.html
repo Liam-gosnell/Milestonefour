@@ -42,19 +42,121 @@
                 <h6 class=" my-1">Free delivery on orders over €{{ free_shipping_threshold }}!</h6>                
             </div>            
         </div>
-        <div id="topnav" class="row d-none bg-white d-lg-flex">
+       <div id="topnav" class="row bg-white pt-lg-2 d-none d-lg-flex">
+            <div class="col-6 col-lg-6 my-auto py-1 py-lg-0 text-center text-lg-left">
+                <a href="{% url 'home' %}" class="nav-link main-logo-link">
+                    <h2 class="logo-font text-black my-0"><strong>DESIGNDROP</strong> </h2>
+                </a>
+            </div>
+            
+            <div class="col-6 col-lg-6 my-auto py-1 py-lg-0">
+                <ul class="list-inline list-unstyled text-center text-lg-right my-0">
+                     <li class="list-inline-item ">
+                        <a class="text-black nav-link" href="{% url 'services' %}" id="services-nav">
+                            <div class="text-center">
+                                <div><i class="fas fa-pen-fancy fa-lg"></i></div>
+                                <p class="my-0">Services</p>
+                            </div>
+                        </a>
+                    </li>
+                    
+
+                    <li class="list-inline-item ">
+                        <a class="text-black nav-link" href="{% url 'portfolio' %}" id="portfolio">
+                            <div class="text-center">
+                                <div><i class="fas fa-briefcase fa-lg"></i></div>
+                                <p class="my-0">Our Work</p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="list-inline-item dropdown">
+                        <a class="text-black nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <div class="text-center">
+                                <div><i class="fas fa-user fa-lg"></i></div>
+                                <p class="my-0">My Account</p>
+                            </div>
+                        </a>
+                        <div class="dropdown-menu border-0" aria-labelledby="user-options">
+                            {% if request.user.is_authenticated %}
+                                {% if request.user.is_superuser %}
+                                    <a href="" class="dropdown-item">Product Management</a>
+                                {% endif %}
+                                <a href="" class="dropdown-item">My Profile</a>
+                                <a href="" class="dropdown-item">Logout</a>
+                            {% else %}
+                                <a href="" class="dropdown-item">Register</a>
+                                <a href="" class="dropdown-item">Login</a>
+                            {% endif %}
+                        </div>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link" href="">
+                            <div class="text-center">
+                                <div><i class="fas fa-shopping-bag fa-lg"></i></div>
+                                <p class="my-0">
+                                    {% if grand_total %}
+                                        €{{ grand_total|floatformat:2 }}
+                                    {% else %}
+                                        €0.00
+                                    {% endif %}
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row bg-white">
+            <nav class="navbar navbar-expand-lg navbar-light w-100">
+                <button class="navbar-toggler ml-3" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                {% include 'includes/mobile-top-header.html' %}
+                {% include 'includes/main-nav.html' %}
+            </nav>
+        </div>
+       
+           
+            
+    </header>
+
+    {% if messages %}
+        <div class="message-container"></div>
+    {% endif %}
+
+    {% block page_header %}
+    {% endblock %}
+
+    {% block content %}
+    {% endblock %}
+
+    {% block postloadjs %}
+    {% endblock %}
+
+    <footer class="container py-5">
+        <div class="row">
+            <div class="col-12 col-md">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block title-blue mb-2" role="img" viewBox="0 0 24 24" focusable="false"><title>Product</title><circle cx="12" cy="12" r="10"/><path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"/></svg>
+                    <small class="d-block mb-3 text-dark">Liam Gosnell &copy; 2020</small>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+
+<!-- 
+ <div id="topnav" class="row d-none bg-white d-lg-flex">
             <div class="col-12 col-lg-6 my-auto  py-lg-0 text-center  text-lg-left">
                 <a href="{% url 'home' %" class="nav-link  main-logo-link">
                     <h3 class="text-dark mb-3 mt-3 ml-3 mr-3">DESIGN DROP</h3>
                 </a>
             </div>
-            
-           
-            <div class="col-12 col-lg-6 my-auto py-1 py-lg-0">
+   <div class="col-12 col-lg-6 my-auto py-1 py-lg-0">
                 
                 <ul class="list-inline list-unstyled text-center text-lg-right my-0">
                     
-                    <li class="list-inline-item">
+                    <li class="list-inline-item dropdown">
                         <a class="nav-link" href="{% url 'portfolio' %}">
                             <div class="text-center">
                                 <div><i class="fas fa-briefcase fa-lg text-dark"></i></div>
@@ -65,7 +167,7 @@
                         </a>
                     </li>
 
-                    <li class="list-inline-item">
+                    <li class="list-inline-item dropdown">
                         <a class="nav-link" href="{% url 'services' %}">
                             <div class="text-center">
                                 <div><i class="fas fa-pen-fancy fa-lg text-dark"></i></div>
@@ -121,32 +223,4 @@
                 {% include 'includes/mobile-top-header.html' %}
                 {% include 'includes/main-nav.html' %}
             </nav>
-        </div>
-    </header>
-
-    {% if messages %}
-        <div class="message-container"></div>
-    {% endif %}
-
-    {% block page_header %}
-    {% endblock %}
-
-    {% block content %}
-    {% endblock %}
-
-    {% block postloadjs %}
-    {% endblock %}
-
-<footer class="container py-5">
-  <div class="row">
-    <div class="col-12 col-md">
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block title-blue mb-2" role="img" viewBox="0 0 24 24" focusable="false"><title>Product</title><circle cx="12" cy="12" r="10"/><path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"/></svg>
-      <small class="d-block mb-3 text-dark">Liam Gosnell &copy; 2020</small>
-    </div>
-    
-  </div>
-  </body>
-</html>
-
-
- 
+        </div> -->
