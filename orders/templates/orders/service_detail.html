@@ -30,15 +30,23 @@
         <h1 class="portfolio-heading portfolio-spacing">{{ item.name }}</h1>
         <h3 class="price-spacing">Price:</h3>
         <p class="lead mb-0 text-left font-weight-bold price-spacing">€{{ item.price }}</p>
+        
 
             {% if item.clicks %}
                 <small class="text-muted portfolio-spacing mt-4"><i class="fas fa-star mr-1 fa-lg"></i>{{ product.clicks }} / 5</small>
             {% else %}
                 <small class="text-muted">No clicks</small>
             {% endif %}
-        <p class="portfolio-spacing lead details-paragraph">{{ item.big_description }}</p>
+        <p class="services-spacing lead details-paragraph">{{ item.big_description }}</p>
       </div>
-
+     
+     <div class="container mb-4">
+        <div class="row Add-tocart-spacing">
+            <div class="col-12 padding-none">
+                <a href="" class="btn btn-green-outline-sm  mt-3">Add to cart</a>
+            </div>
+        </div>
+     </div>
       
      
       <div class="container mb-4">
