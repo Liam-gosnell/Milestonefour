@@ -1,6 +1,8 @@
 {% extends "base.html" %}
 {% load static %}
 
+<!-- Header -->
+
 {% block page_header %}
     <div class="container header-container">
         <div class="row">
@@ -9,6 +11,9 @@
     </div>
 {% endblock %}
 
+<!-- End of Header -->
+
+<!-- Portfolio Main-Image -->
 {% block content %}
     <div class="overlay"></div>
    <div class="container-fluid">
@@ -24,7 +29,9 @@
             </div>
         </div>
     </div>
+<!-- End of Portfolio Main-Image -->
 
+<!-- Portfolio Details -->
     <div class="container mb-4">
         <div class="row portfolio-spacing">
             <div class="col-md-7">
@@ -53,6 +60,10 @@
         </div>
     </div>
 
+<!-- End of Portfolio Details -->
+
+<!-- Portfolio Image1 -->
+
     <div class="container-fluid">
         <div class="row">
             <div class="col-12 padding-none">
@@ -63,6 +74,9 @@
         </div>
     </div>
 
+<!-- End of Portfolio Image1 -->
+
+<!-- Portfolio Approach -->
     <div class="container mb-4">
         <div class="row portfolio-spacing">
             <div class="col-12">
@@ -72,8 +86,9 @@
             </div>
         </div>
     </div>
+<!-- End of Portfolio Approach -->
 
-
+<!-- Portfolio Image 2 -->
     <div class="container-fluid">
         <div class="row">
             <div class="col-12 padding-none">
@@ -83,7 +98,9 @@
             </div>
         </div>
     </div>
+<!-- End of Portfolio Image 2 -->
 
+<!-- DESIGNDROP info -->
     <div class="container mb-4">
         <div class="row portfolio-spacing">
             <div class="col-12">
@@ -99,10 +116,9 @@
             </div>
         </div>
     </div>
+<!-- End of DESIGNDROP info -->
 
-    
-
-
+<!-- DESIGNDROP Image -->
     <div class="container-fluid">
         <div class="row">
             <div class="col-12 padding-none">
@@ -115,9 +131,10 @@
             </div>
         </div>
     </div>
+<!-- End of DESIGNDROP Image -->
 
+<!-- Back to work page button -->
     <div class="container">
-         
           <div class="row">
             <div class="col-12 padding-60" >
                 <a class="btn btn-green-sm" href="{% url 'portfolio' %}">
@@ -128,6 +145,7 @@
             </div>
           </div>
     </div>
+<!-- End of Back to work page button -->
 {% endblock %}
 
 
