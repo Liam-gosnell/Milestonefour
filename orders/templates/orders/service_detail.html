@@ -38,14 +38,38 @@
                 <small class="text-muted">No clicks</small>
             {% endif %}
         <p class="services-spacing lead details-paragraph">{{ item.big_description }}</p>
+        <div class="row Add-tocart-spacing">
+            <div class="col-12 padding-none">
+                <form class="form" action="{% url 'add_to_bag' item.id %}" method="POST">
+                        {% csrf_token %}
+                        <div class="form-row">
+                            <div class="col-12">
+                                <p class="mt-3"><strong>Quantity:</strong></p>
+                                <div class="form-group w-50">
+                                    <div class="input-group">
+                                        <input class="form-control qty_input" type="number" name="quantity" value="1" min="1" max="99" data-item_id="{{ item.id }}" id="id_qty_{{ item.id }}">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12">
+                                <a href="{% url 'services' %}" class=" btn btn-green-sm">
+                                    <span class="icon">
+                                        <i class="fas fa-chevron-left"></i>
+                                    </span>
+                                    <span >Keep Shopping</span>
+                                </a>
+                                <input type="submit" class="btn btn-green-outline-sm  mt-3" value="Add to bag">
+                            </div>
+                            <input type="hidden" name="redirect_url" value="{{ request.path }}">
+                        </div>
+                    </form>
+            </div>
+        </div>
       </div>
      
      <div class="container mb-4">
-        <div class="row Add-tocart-spacing">
-            <div class="col-12 padding-none">
-                <a href="" class="btn btn-green-outline-sm  mt-3">Add to cart</a>
-            </div>
-        </div>
+        
      </div>
       
      
