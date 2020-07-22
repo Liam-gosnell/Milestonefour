@@ -29,7 +29,7 @@ class Order(models.Model):
         """
         self.order_total = self.lineitems.aggregate(Sum('lineitem_total'))['lineitem_total__sum']
         if self.order_total < settings.FREE_BUSINESS_THRESHOLD:
-            self.delivery_cost = self.order_total * settings.STANDARD_BUSINESS_PERCENTAGE / 100
+            self.business_cost = self.order_total * settings.STANDARD_BUSINESS_PERCENTAGE / 100
         else:
             self.business_cost = 0
         self.grand_total = self.order_total + self.business_cost
