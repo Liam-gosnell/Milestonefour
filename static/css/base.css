@@ -114,7 +114,7 @@ p {
 
 .message-container {
     position: fixed;
-    top: 72px;
+    top: 94px!important;
     right: 15px;
     z-index: 999999999;
 }
