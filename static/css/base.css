@@ -110,6 +110,23 @@ p {
     padding-left: 0px;
 }
 
+/* Messages */
+
+.message-container {
+    position: fixed;
+    top: 72px;
+    right: 15px;
+    z-index: 999999999;
+}
+
+.custom-toast {
+    overflow: visible;
+}
+
+.toast-capper {
+    height: 2px;
+}
+
 /* Testimonial styles */
 .testimonials-clean {
   color:#313437;
