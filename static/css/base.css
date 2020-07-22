@@ -38,6 +38,9 @@ p {
     padding-bottom: 80px!important;
 }
 
+.update-link, .remove-item {
+    cursor: pointer;
+}
 
 /* from Bulma */
 .icon {
