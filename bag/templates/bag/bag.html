@@ -48,7 +48,7 @@
                                         <p class="my-0">€{{ item.item.price }}</p>
                                     </td>
                                     <td class="py-3 w-25">
-                                        <p class="my-0">{{ item.item.quantity }}</p>
+                                        <p class="my-0">{{ item.quantity }}</p>
                                     </td>
                                     <td class="py-3">
                                         <p class="my-0">€{{ item.item.price }}</p>
@@ -62,7 +62,7 @@
                                     <h4 class="mt-4"><strong>Grand Total: €{{ grand_total|floatformat:2 }}</strong></h4>
                                     {% if free_business_delta > 0 %}
                                         <p class="mb-1 text-danger">
-                                            You could get free business cards by spending just <strong>${{ free_business_delta }}</strong> more!
+                                            You could get free business cards by spending just <strong>€{{ free_business_delta }}</strong> more!
                                         </p>
                                     {% endif %}
                                 </td>

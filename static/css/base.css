@@ -1,11 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 
+/* main styles */
+
 body{
   font-family: 'Roboto', sans-serif;
 }
 
 html {
     height: 100%;
+}
+
+p {
+    font-weight: 400!important;
 }
 
 .navbar{
@@ -30,14 +36,6 @@ html {
 
 .paddingbottom-5{
     padding-bottom: 80px!important;
-}
-
-.bg-purple {
-    background-color: #5e17eb;
-}
-
-.color-purple {
-    color: #5e17eb;
 }
 
 
@@ -309,10 +307,23 @@ html {
   background-color: #fff;
 }
 
+.btn-black-quantity {
+    background: black;
+    color: white;
+
+}
 
 /* custom coloured text and backgrounds */
 .text-black {
     color: #000 !important;
+}
+
+.bg-purple {
+    background-color: #5e17eb;
+}
+
+.color-purple {
+    color: #5e17eb;
 }
 
 .bg-black{

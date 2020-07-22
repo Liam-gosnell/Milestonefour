@@ -9,7 +9,7 @@ def bag_contents(request):
     total = 0
     item_count = 0
     bag = request.session.get('bag', {})
-
+    print(bag)
     for item_id, quantity in bag.items():
         item = get_object_or_404(Item, pk=item_id)
         total += quantity * item.price
@@ -29,7 +29,7 @@ def bag_contents(request):
         free_business_delta = 0
 
     grand_total = business + total
-
+    
     context = {
         'bag_items': bag_items,
         'total': total,
