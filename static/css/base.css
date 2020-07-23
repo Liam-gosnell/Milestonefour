@@ -50,6 +50,7 @@ p {
     justify-content: center;
     height: 1.5rem;
     width: 1.5rem;
+    border-radius: 4px;
 }
 
 .main-logo-link {
@@ -351,7 +352,7 @@ p {
   width: 100%;
   color: #fff;
   background-color: #5e17eb;
-  border-radius: 6px;
+  border-radius: 8px;
   font-size: 1.1rem;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;

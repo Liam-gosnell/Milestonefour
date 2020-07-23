@@ -3,7 +3,7 @@
 {% load bag_tools %}
 
 {% block extra_css %}
-    <link rel="stylesheet" href="{% static 'checkout/css/checkout.css' %}">
+    <link rel="stylesheet" href="{% static 'css/checkout.css' %}">
 {% endblock %}
 
 {% block page_header %}
@@ -60,7 +60,7 @@
                 <div class="row text-black text-right">
                     <div class="col-7 offset-2">
                         <p class="my-0">Order Total:</p>
-                        <p class="my-0">Business Cards:</p>
+                        <p class="my-0">Tax:</p>
                         <p class="my-0">Grand Total:</p>
                     </div>
                     <div class="col-3">
@@ -105,13 +105,13 @@
                     </fieldset>
 
                     <div class="submit-button text-right mt-5 mb-2">                    
-						<a href="{% url 'view_bag' %}" class="btn btn-outline-black rounded-0">
+						<a href="{% url 'view_bag' %}" class="btn btn-info mb-3 rounded-3">
 							<span class="icon">
 								<i class="fas fa-chevron-left"></i>
 							</span>
 							<span class="font-weight-bold">Adjust Bag</span>
 						</a>
-						<button id="submit-button" class="btn btn-green-sm rounded-0 btn-lg">
+						<button id="submit-button" class="btn btn-green-sm rounded-3 btn-lg">
 							<span class="font-weight-bold">Complete Order</span>
 							<span class="icon">
 								<i class="fas fa-lock"></i>
@@ -130,3 +130,9 @@
     </div>
 {% endblock %}
 
+{% block postloadjs %}
+    {{ block.super }}
+    {{ stripe_public_key|json_script:"id_stripe_public_key" }}
+    {{ client_secret|json_script:"id_client_secret" }}
+    <script src="{% static 'js/stripe_elements.js' %}"></script>
+{% endblock %}
