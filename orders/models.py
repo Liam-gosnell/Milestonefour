@@ -33,7 +33,7 @@ class Item(models.Model):
     description = models.TextField(max_length=70)
     big_description = models.TextField(max_length=100, null=True, blank=True)
     price = models.DecimalField(max_digits=6, decimal_places=2)
-    image = models.ImageField(upload_to='images', null=True, blank=True)
+    image = models.ImageField(upload_to='images')
     clicks = models.IntegerField(default=0)
     tag = models.ForeignKey(
         ItemTag, null=True, blank=True, on_delete=models.SET_NULL)
