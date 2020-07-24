@@ -32,7 +32,7 @@
                         <div class=" col-lg-12 col-xl-6 col-sm-12 col-md-12 padding-none">
                             <div class="card h-100 border-0">
                                 <a href="{% url 'portfolio_details' portfolio.id %}">
-                                    <img class="card-img-top portfolio-image img-fluid" src="{{ MEDIA_URL }}{{ portfolio.big_image.url }}" alt="{{ portfolio.name }}">
+                                    <img class="card-img-top portfolio-image img-fluid" src="{{ {{ MEDIA_URL }}portfolio.big_image.url }}" alt="{{ portfolio.name }}">
                                 </a>
                                 
                             </div>
@@ -58,7 +58,7 @@
             <div class="row people">
                 <div class="col-md-6 col-lg-4 item">
                     <div class="box">
-                        <p class="description">Not only do the staff at DESIGNDROP have a great eye for design and conception - they are accommodating, patient and give honest, helpful feedback. They did not hesitate when I required changes to the orders. My brand is now exactly what I envisioned, I would not hesitate to work with or recommend this wonderful company to anyone in need of great service</p>
+                        <p class="description text-black">Not only do the staff at DESIGNDROP have a great eye for design and conception - they are accommodating, patient and give honest, helpful feedback. They did not hesitate when I required changes to the orders. My brand is now exactly what I envisioned, I would not hesitate to work with or recommend this wonderful company to anyone in need of great service</p>
                     </div>
                     <div class="author"><img class="rounded-circle" src="{{MEDIA_URL}}testimonial1.png">
                         <h5 class="name">Ben Johnson</h5>
@@ -67,7 +67,7 @@
                 </div>
                 <div class="col-md-6 col-lg-4 item">
                     <div class="box">
-                        <p class="description">I would recommend Matthew at DESIGNDROP to anyone looking for exquisite work. He managed to put our ideas to paper while also putting in personal touches. Eventually, after daily phone-calls and emails - we now have developed something that would not have been possible without such a hardworking man.</p>
+                        <p class="description text-black">I would recommend Matthew at DESIGNDROP to anyone looking for exquisite work. He managed to put our ideas to paper while also putting in personal touches. Eventually, after daily phone-calls and emails - we now have developed something that would not have been possible without such a hardworking man.</p>
                     </div>
                     <div class="author"><img class="rounded-circle" src="{{MEDIA_URL}}testimonial2.png">
                         <h5 class="name">Carl Kent</h5>
@@ -76,7 +76,7 @@
                 </div>
                 <div class="col-md-6 col-lg-4 item">
                     <div class="box">
-                        <p class="description">I was recommended DESIGNDROP by a friend and it did not fall short of expectation. They truly go above and beyond for their clients, we were provided with a professional logo for our business and a sleek update for our website; not one fault to be found!.</p>
+                        <p class="description text-black">I was recommended DESIGNDROP by a friend and it did not fall short of expectation. They truly go above and beyond for their clients, we were provided with a professional logo for our business and a sleek update for our website; not one fault to be found!.</p>
                     </div>
                     <div class="author"><img class="rounded-circle" src="{{MEDIA_URL}}testimonial3.png">
                         <h5 class="name">Emily Clark</h5>
