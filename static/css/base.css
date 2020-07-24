@@ -683,6 +683,21 @@ input[name='q']::placeholder {
 }
 
 /* pad the top a bit when navbar is collapsed on mobile */
+@media (max-width: 320px){
+    .header-image {
+    background: url('/media/DesignDrop (7).png') no-repeat center center fixed;
+}
+
+
+.my-auto {
+    margin-top: 266px!important;
+}
+
+
+
+}
+
+
 @media (max-width: 991px) {
     .header-container {
         padding-top: 84px;
@@ -721,7 +736,7 @@ input[name='q']::placeholder {
 }
 
 .my-auto {
-    margin-top: 410px!important;
+    margin-top: 360px!important;
 }
 
 .col-lg-4 {
