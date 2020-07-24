@@ -1,0 +1,1 @@
+web: gunicorn designdrop.wsgi:application
