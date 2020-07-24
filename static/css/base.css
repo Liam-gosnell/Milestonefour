@@ -539,7 +539,7 @@ input[name='q']::placeholder {
 }
 
 .portfolio-images {
-    height: 100vh!important;
+    height: auto!important;
 }
 
 .portfolio-smallier-images {
