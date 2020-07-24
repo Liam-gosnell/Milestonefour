@@ -87,8 +87,13 @@
         </div>
       </div>
      
-     <div class="container mb-4">
-        
+     <div class="container text-center mb-4">
+        {% if request.user.is_superuser %}
+                <small class="ml-3">
+                    <a href="{% url 'edit_service' item.id %}">Edit</a> | 
+                    <a class="text-danger" href="{% url 'delete_service' item.id %}">Delete</a>
+                </small>
+          {% endif %}
      </div>
       
      

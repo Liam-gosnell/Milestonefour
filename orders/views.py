@@ -1,5 +1,6 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
+
 from .models import Item, ItemTag
 
 from .forms import ItemForm
@@ -36,8 +37,9 @@ def add_service(request):
         form = ItemForm(request.POST, request.FILES)
         if form.is_valid():
             form.save()
-            messages.success(request, 'Successfully added service!')
-            return redirect(reverse('add_service'))
+            item = form.save()
+            messages.success(request, 'Successfully added Service!')
+            return redirect(reverse('service_detail', args=[item.id]))
         else:
             messages.error(request, 'Failed to add service. Please ensure the form is valid.')
     else:
@@ -58,7 +60,7 @@ def edit_service(request, item_id):
         if form.is_valid():
             form.save()
             messages.success(request, 'Successfully updated service!')
-            return redirect(reverse('service_detail', args=[item.id]))
+            return redirect(reverse('services', args=[item.id]))
         else:
             messages.error(request, 'Failed to update service. Please ensure the form is valid.')
     else:
@@ -72,3 +74,11 @@ def edit_service(request, item_id):
     }
 
     return render(request, template, context)
+
+
+def delete_service(request, item_id):
+    """ Delete a service from the services """
+    item = get_object_or_404(Item, pk=item_id)
+    item.delete()
+    messages.success(request, 'Item deleted!')
+    return redirect(reverse('services'))
