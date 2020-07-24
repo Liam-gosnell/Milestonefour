@@ -50,3 +50,25 @@ def add_service(request):
 
     return render(request, template, context)
 
+def edit_service(request, item_id):
+    """ Edit a service in the store """
+    item = get_object_or_404(Item, pk=item_id)
+    if request.method == 'POST':
+        form = ItemForm(request.POST, request.FILES, instance=item)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Successfully updated service!')
+            return redirect(reverse('service_detail', args=[item.id]))
+        else:
+            messages.error(request, 'Failed to update service. Please ensure the form is valid.')
+    else:
+        form = ItemForm(instance=item)
+        messages.info(request, f'You are editing {item.name}')
+
+    template = 'orders/edit_service.html'
+    context = {
+        'form': form,
+        'item': item,
+    }
+
+    return render(request, template, context)

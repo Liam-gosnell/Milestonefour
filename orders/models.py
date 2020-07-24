@@ -31,7 +31,7 @@ class Item(models.Model):
     name = models.CharField(max_length=25)
     slug = models.SlugField()
     description = models.TextField(max_length=70)
-    big_description = models.TextField(max_length=100, null=True, blank=True)
+    big_description = models.TextField(max_length=400, null=True, blank=True)
     price = models.DecimalField(max_digits=6, decimal_places=2)
     image = models.ImageField(upload_to='images')
     clicks = models.IntegerField(default=0)
