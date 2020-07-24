@@ -1,1 +1,1 @@
-web: gunicorn designdrop.wsgi:application
+web: gunicorn dropdesign.wsgi:application
