@@ -28,7 +28,7 @@
         
             <div class="portfolio-container ">
                 <div class="row mt-1 mb-2">
-                {% for portfolio in portfolio %}
+                {% for portfolio in portfolios %}
                         <div class=" col-lg-12 col-xl-6 col-sm-12 col-md-12 padding-none">
                             <div class="card h-100 border-0">
                                 <a href="{% url 'portfolio_details' portfolio.id %}">

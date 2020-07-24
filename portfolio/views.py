@@ -6,10 +6,10 @@ from .models import Portfolio
 def all_portfolio(request):
     """ A view to return the index page """
 
-    portfolio = Portfolio.objects.all()
+    portfolios = Portfolio.objects.all()
 
     context = {
-        'portfolio': portfolio,
+        'portfolios': portfolios,
     }
 
     return render(request, 'portfolio/portfolio.html', context)
