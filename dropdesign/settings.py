@@ -48,9 +48,9 @@ INSTALLED_APPS = [
     'bag',
     'checkout',
     'profiles',
+    'designdrop'
 
-    
-    #Other
+    # Other
     'crispy_forms',
 
 ]
@@ -80,7 +80,7 @@ TEMPLATES = [
         'OPTIONS': {
             'context_processors': [
                 'django.template.context_processors.debug',
-                'django.template.context_processors.request', # Required by aullauth
+                'django.template.context_processors.request',   # Required by aullauth
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
                 'django.template.context_processors.media',
@@ -178,7 +178,7 @@ STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
-#Stripe
+# Stripe
 FREE_BUSINESS_THRESHOLD = 30
 STANDARD_BUSINESS_PERCENTAGE = 23
 STRIPE_CURRENCY = 'eur'
