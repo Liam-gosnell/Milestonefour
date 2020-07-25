@@ -767,9 +767,24 @@ input[name='q']::placeholder {
 }
 
 
-@media only screen and (min-device-width: 768px){
+@media (min-width: 992px) {
 
      .header-image {
     background: url('/media/DesignDrop (12).png') no-repeat center center fixed;
 }
 }
+
+@media (min-width: 1016px) {
+
+     .header-image {
+    background: url('/media/DesignDrop (5).png') no-repeat center center fixed;
+}
+}
+
+@media (min-width: 1500px) {
+
+     .header-image {
+    background: url('/media/Largeimage.png') no-repeat center center fixed;
+}
+}
+
