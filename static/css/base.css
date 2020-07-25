@@ -682,9 +682,13 @@ input[name='q']::placeholder {
 
 
 
-@media (max-width: 480px) {
+@media (max-width: 600px) {
     .header-container {
         padding-top: 84px;
+    }
+
+    .center{
+        text-align: center!important;
     }
 
     .display-4.logo-font.text-black {
@@ -716,7 +720,7 @@ input[name='q']::placeholder {
     height: 92%!important;
 }
 .header-image {
-    background: url('/media/DesignDrop (7).png') no-repeat center center fixed;
+    background: url('/media/designdropmobile3.png') no-repeat center center fixed;
 }
 
 .my-auto {
@@ -767,17 +771,30 @@ input[name='q']::placeholder {
 }
 
 
+@media (min-width: 768px) {
+     .header-image {
+    background: url('/media/designdroptablet.png') no-repeat center center fixed;
+}
+
+
+.center{
+        text-align: center!important;
+    }
+}
+
 @media (min-width: 992px) {
 
      .header-image {
-    background: url('/media/DesignDrop (12).png') no-repeat center center fixed;
+    background: url('/media/DesignDrop.png') no-repeat center center fixed;
 }
 }
+
+
 
 @media (min-width: 1016px) {
 
      .header-image {
-    background: url('/media/DesignDrop (5).png') no-repeat center center fixed;
+    background: url('/media/Largeimage.png.png') no-repeat center center fixed;
 }
 }
 
@@ -786,5 +803,5 @@ input[name='q']::placeholder {
      .header-image {
     background: url('/media/Largeimage.png') no-repeat center center fixed;
 }
-}
+} 
 
