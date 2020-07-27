@@ -99,3 +99,4 @@ def delete_service(request, item_id):
     item.delete()
     messages.success(request, 'Item deleted!')
     return redirect(reverse('services'))
+
