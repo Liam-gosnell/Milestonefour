@@ -656,10 +656,21 @@ input[name='q']::placeholder {
 
 
 /* -------------------------------- Media Queries */
+@media (max-width: 375px) {
+    .header-image {
+    background: url('/media/designmobile2.png') no-repeat center center fixed;
+}
+    .padding-sm-mobile {
+    margin-top: 420px!important;
+}
+.center-mobile{
+        text-align: center!important;
+    }
+}
 
 
 /* Mobile */
-@media only screen and (max-width: 768px) and (min-width: 320px){
+@media only screen and (max-width: 768px) and (min-width: 376px){
     .header-container {
         padding-top: 84px;
     }
