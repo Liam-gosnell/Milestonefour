@@ -180,6 +180,13 @@ The following tests have been used to ensure proper site functionality:
 
 # Bugs
 
+While developing thsi system I came across many bugs/problems along the way. The first problem that I encountered was correcting the 'for loop'
+on the portfolio section of the page as the images and information from the json files were not showing. I fixed that after some testing with different
+variable names and different views. Another bug i came across was the header image on mobile, It would work perfectly , even when deployed to heroku
+but then once tested on a mobile device it would not show. To fix this is changed the image to a smallier image of itself and it finally worked on all devices.
+
+At the moment of deployment there are no bugs in the system and it should be working perfectly.
+
 ## CSS
 
 <p>
@@ -197,7 +204,7 @@ All javascript in this Website have been tested with JSLINT as listed above. The
 # Deployment
 
 <p>
-he code of this system is hosted by using Heroku and Amazon S3, 
+The code of this system is hosted by using Heroku and Amazon S3, 
 this code is deployed to GitHub directly from the master branch. 
 The deployed site will update automatically upon new commits to the master branch. 
 This code can be run locally or deployed to a live environment. Directions are based on deployment locally and to Heroku.
