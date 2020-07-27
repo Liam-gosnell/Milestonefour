@@ -371,7 +371,7 @@ input[name='q']::placeholder {
 
 .btn-green-sm {
   width: 100%;
-  color: #fff;
+  color: #fff!important;
   background-color: #5e17eb;
   border-radius: 8px;
   font-size: 1.1rem;
@@ -381,7 +381,7 @@ input[name='q']::placeholder {
 }
 
 .btn-green-sm:hover {
-    color: #5e17eb;
+    color: #5e17eb!important;
   background-color: #fff;
 }
 
