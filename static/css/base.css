@@ -678,19 +678,16 @@ input[name='q']::placeholder {
     }
 }
 
-/* pad the top a bit when navbar is collapsed on mobile */
 
-
-
+/* Mobile */
 @media (max-width: 600px) {
     .header-container {
         padding-top: 84px;
     }
 
-    .center{
+    .center-mobile{
         text-align: center!important;
     }
-
     .display-4.logo-font.text-black {
         font-size: 2rem;
     }
@@ -767,20 +764,9 @@ input[name='q']::placeholder {
 }
 
 
-
 }
 
-
-@media (min-width: 768px) {
-     .header-image {
-    background: url('/media/designdroptablet.png') no-repeat center center fixed;
-}
-
-
-.center{
-        text-align: center!important;
-    }
-}
+/* medium devices */
 
 @media (min-width: 992px) {
 
@@ -789,15 +775,23 @@ input[name='q']::placeholder {
 }
 }
 
+/* Ipad and ipad pro */
 
+@media only screen and (max-width: 1024px) and (min-width: 768px) {
 
-@media (min-width: 1016px) {
-
-     .header-image {
-    background: url('/media/Largeimage.png.png') no-repeat center center fixed;
+      .header-image {
+    background: url('/media/tablet-image2.png') no-repeat center center fixed;
 }
+
+.padding-tablet {
+    margin-top: 630px!important;
 }
 
+
+}
+
+
+/* Monitor */
 @media (min-width: 1500px) {
 
      .header-image {
