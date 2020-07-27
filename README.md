@@ -12,7 +12,7 @@ and a system for customers to easily navigate through.
 
 ## Demo 
 
-A live demo can be found [here]().
+A live demo can be found [here](https://designdrop.herokuapp.com/).
 
 # UX
 
@@ -69,7 +69,7 @@ The contact section is there for people who need to know more information about 
 
 <p>By using Mockflow the following wireframes were created:</p>
 
--wireframes-
+![Wireframe pdf](https://raw.githubusercontent.com/Liam-gosnell/Milestonefour/master/wireframes/designdrop-main.pdf "About wireframe")
 
 
 # Technologies

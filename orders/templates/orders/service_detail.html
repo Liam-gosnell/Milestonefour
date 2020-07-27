@@ -43,12 +43,12 @@
                 <form class="form" action="{% url 'add_to_bag' item.id %}" method="POST">
                         {% csrf_token %}
                         <div class="form-row">
-                            <div class="col-8">
+                            <div class="col-12">
                                 <p class="mt-3"><strong>Quantity:</strong></p>
                                 <div class="form-group w-50">
                                     <div class="input-group">
                                         <div class="input-group-prepend">
-                                            <button class="decrement-qty btn btn-black-quantity rounded-0" 
+                                            <button class="decrement-qty btn btn-black-services rounded-0" 
                                                 data-item_id="{{ item.id }}" id="decrement-qty_{{ item.id }}">
                                                 <span class="icon">
                                                     <i class="fas fa-minus"></i>
@@ -60,7 +60,7 @@
                                             data-item_id="{{ item.id }}"
                                             id="id_qty_{{ item.id }}">
                                         <div class="input-group-append">
-                                            <button class="increment-qty btn btn-black-quantity rounded-0"
+                                            <button class="increment-qty btn btn-black-services rounded-0"
                                                 data-item_id="{{ item.id }}" id="increment-qty_{{ item.id }}">
                                                 <span class="icon">
                                                     <i class="fas fa-plus"></i>

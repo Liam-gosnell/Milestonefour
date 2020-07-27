@@ -3,6 +3,7 @@ from django.conf import settings
 from django.shortcuts import get_object_or_404
 from orders.models import Item
 
+
 def bag_contents(request):
 
     bag_items = []
@@ -20,7 +21,6 @@ def bag_contents(request):
             'item': item,
         })
 
-
     if total < settings.FREE_BUSINESS_THRESHOLD:
         business = total * Decimal(settings.STANDARD_BUSINESS_PERCENTAGE / 100)
         free_business_delta = settings.FREE_BUSINESS_THRESHOLD - total
@@ -29,7 +29,7 @@ def bag_contents(request):
         free_business_delta = 0
 
     grand_total = business + total
-    
+
     context = {
         'bag_items': bag_items,
         'total': total,

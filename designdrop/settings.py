@@ -48,7 +48,6 @@ INSTALLED_APPS = [
     'bag',
     'checkout',
     'profiles',
-    'contact',
 
     # Other
     'crispy_forms',
@@ -183,7 +182,6 @@ if 'USE_AWS' in os.environ:
         'Expires': 'Thu, 31 Dec 2099 20:00:00 GMT',
         'CacheControl': 'max-age=94608000',
     }
-
 
     # Bucket Config
     AWS_STORAGE_BUCKET_NAME = 'designdrop'

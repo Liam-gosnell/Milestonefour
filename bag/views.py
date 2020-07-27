@@ -3,19 +3,18 @@ from django.contrib import messages
 
 from orders.models import Item
 
-from django.http import JsonResponse
-
 # Create your views here.
 
 def view_bag(request):
+
     """ A view that returns the bag contents page  """
 
     return render(request, 'bag/bag.html')
 
 
 def add_to_bag(request, item_id):
-    """ Add a quantity of the specified product to the shopping bag """
 
+    """ Add a quantity of the specified product to the shopping bag """
 
     item = get_object_or_404(Item, pk=item_id)
     quantity = int(request.POST.get('quantity'))
@@ -29,7 +28,6 @@ def add_to_bag(request, item_id):
     else:
         bag[item_id] = quantity
         messages.success(request, f'Added {item.name} to your bag')
-        
 
     request.session['bag'] = bag
     return redirect(redirect_url)
@@ -67,7 +65,6 @@ def remove_from_bag(request, item_id):
         else:
                 bag.pop(item_id)
                 messages.success(request, f'Removed {item.name} from your bag')
-                
 
         request.session['bag'] = bag
         return HttpResponse(status=200)
@@ -75,4 +72,3 @@ def remove_from_bag(request, item_id):
     except Exception as e:
         messages.error(request, f'Error removing item: {e}')
         return HttpResponse(status=500)
-

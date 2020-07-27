@@ -1,3 +1,4 @@
+
 {% extends "base.html" %}
 {% load static %}
 {% load bag_tools %}
@@ -35,8 +36,9 @@
                                     <th scope="col">Subtotal</th>
                                 </tr>
                             </thead>
-
-                            {% for item in bag_items %}
+        
+                            <tbody>
+                                {% for item in bag_items %}
                                 <tr>
                                     <td class="p-3 w-25">
                                         <img class="img-fluid rounded" src="{{ item.item.image.url }}">
@@ -112,6 +114,7 @@
                                     </a>
                                 </td>
                             </tr>
+                            </tbody>
                         </table>
                     </div>
                 {% else %}

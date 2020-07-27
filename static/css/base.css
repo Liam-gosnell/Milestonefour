@@ -28,7 +28,7 @@ p {
 
 .font-small{
     font-size: 1.2rem;
-    font-weight: 650;
+    font-weight: 400;
 }
 .navbar{
     font-family: 'Roboto', sans-serif;
@@ -306,7 +306,19 @@ input[name='q']::placeholder {
   color: #000;
 }
 
-
+.btn-black-services {
+    height: 32px;
+    width: 41%;
+    min-width: 92px;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 300;
+    color: #fff;
+    background-color: #000;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
 
 .btn-black-title {
   font-size: 1.3rem;
@@ -498,7 +510,6 @@ input[name='q']::placeholder {
 }
 
 #services {
-  background-color: e;
   min-height: 900px;
   padding-top: 60px;
 }
