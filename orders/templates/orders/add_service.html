@@ -23,7 +23,7 @@
         </div>
 
         <div class="row">
-             <div class="col-12 col-md-6">
+             <div class="col-12 ">
                 <form method="POST" action="{% url 'add_service' %}" class="form mb-2" enctype="multipart/form-data">
                     {% csrf_token %}
                     {% for field in form %}
@@ -34,8 +34,8 @@
                         {% endif %}
                     {% endfor %}
                     <div class="text-right">
-                        <a class="btn btn-green-outline-sm rounded-3 mt-3" href="{% url 'services' %}">Cancel</a>
                         <button class="btn btn-green-sm rounded-3 mt-3 mb-3" type="submit">Add Service</button>
+                        <a class="btn btn-green-outline-sm rounded-3 mt-3" href="{% url 'services' %}">Cancel</a>
                     </div>
                 </form>
             </div>       
