@@ -3,6 +3,8 @@ from django.contrib import messages
 
 from orders.models import Item
 
+from django.http import JsonResponse
+
 # Create your views here.
 
 def view_bag(request):
@@ -73,3 +75,4 @@ def remove_from_bag(request, item_id):
     except Exception as e:
         messages.error(request, f'Error removing item: {e}')
         return HttpResponse(status=500)
+

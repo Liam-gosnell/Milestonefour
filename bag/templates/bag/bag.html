@@ -46,7 +46,7 @@
                                         <span class="badge badge-pill badge-{{ item.item.tag.colour }} service-badge">{{ item.item.tag }}</span>
                                     </td>
                                     <td class="py-3">
-                                        <p class="my-0">€{{ item.item.price | calc_subtotal:item.quantity }}</p>
+                                        <p class="my-0" id="subtotal">€{{ item.item.price }}</p>
                                     </td>
                                     <td class="py-3 w-25">
                                         <form class="form update-form" method="POST" action="{% url 'adjust_bag' item.item_id %}">
@@ -80,7 +80,7 @@
                                         <a class="remove-item text-danger float-right" id="remove_{{ item.item_id }}"><small>Remove</small></a>
                                     </td>
                                     <td class="py-3">
-                                        <p class="my-0">€{{ item.item.price }}</p>
+                                        <p class="my-0">€{{ item.item.price | calc_subtotal:item.quantity }}</p>
                                     </td>
                                 </tr>
                             {% endfor %}
@@ -151,6 +151,8 @@
              location.reload();
          });
     })
+
+
 </script>
 
 {% endblock %}
