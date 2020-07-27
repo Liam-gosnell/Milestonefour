@@ -133,6 +133,33 @@ The system has been field-tested by friends and family.
 I have tested all the forms/links and all buttons on the site. Which gives the system a smooth, responive look and feel. 
 </p>
 
+<p>Throughout the process I continually manually tested the frontend, 
+by saving my work in Gitpod and running it in Google Chrome. 
+I used Chrome Developer Tools to ensure that my site was responsive and 
+functioned in all screen sizes and that my styling was applied appropriately throughout.</p>
+
+<p>I had several users log in and out of the website using all the functions of the website. </p>
+
+<p>I have tested the website on:</p>
+
+* Google Chrome
+* Apple Safari
+* Internet Explorer
+* Mozilla Firefox
+
+<h4>Devices</h4>
+
+* Iphone X
+* Iphone 8
+* Iphone 6/7
+* iPad 
+* iPad Pro
+* Pixel
+* Pixel 2XL
+* Galaxy Note 3
+* Kindle fire XDH
+* Galaxy s5
+
 <p>
 For testing the admin interface an admin test account has been created on the deployed version to Heroku. The logins are:
 </p>
@@ -146,3 +173,151 @@ The following tests have been used to ensure proper site functionality:
 
 * [GTmetrix](https://gtmetrix.com/) - To test on website loading times.
 * [W3C HTML Validator](https://validator.w3.org/) - This validator checks the mark-up validity of Web documents in HTML.
+* [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) -  CSS Validator
+* [Python Validator](https://extendsclass.com/python-tester.html) - Python Validator
+* [JSLINT](https://www.jslint.com/) - JS Validator
+
+
+# Bugs
+
+## CSS
+
+<p>
+CSS written code is tested with the W3C CSS Validator. As it does not give any problems, 
+the deployed version of the site does gives a couple of warnings and errors coming from Bootstrap and the Font Awesome animations Library.
+</p>
+
+## JavaScript
+
+<p>
+All javascript in this Website have been tested with JSLINT as listed above. There are no JavaScript erros in the deployed site.
+</p>
+
+
+# Deployment
+
+<p>
+he code of this system is hosted by using Heroku and Amazon S3, 
+this code is deployed to GitHub directly from the master branch. 
+The deployed site will update automatically upon new commits to the master branch. 
+This code can be run locally or deployed to a live environment. Directions are based on deployment locally and to Heroku.
+</p>
+
+## Deployment requirements
+
+* Gitpod - An environment to develop software
+* Python3 - A programming language
+* Pip - To get python installation packages
+* Git - Version control for code source
+* AWS_S3 - Web based cloud storage service
+* Stripe - To securely collect credit card payments
+
+## ### How to install DESIGNDROP
+
+1. From your terminal enter git clone https://github.com/Liam-gosnell/Milestonefour to clone the project and download to your IDE
+
+2. Set up your Virtual Environment Variables
+
+* this can be done by creating folder named .venv to hold your variables and importing them into your app.py
+* this can be done in your IDE bash terminal - e.g. cd .. to your root directory and type nano.bashrc and type in your important environment variables
+
+3. You should now install the requirements by typing $ pip3 -r install requirements.txt
+
+4. You will also have to create your own database to get full functionality from the project.
+
+### How to Deploy your site
+
+<p>I committed my code to GitHub at regular intervals. I am now using git more often, making sure to give detailed commit messages as I know it provides version control.</p>
+
+1. In order to deploy the site to Heroku, you must create a Procfile and requirements.txt. These will tell Heroku how to run your app.
+
+* To create a Procfile - echo web: python (your filename).py > Procfile
+* To create a requirements.txt - pip3 freeze --local > requirements.txt
+
+2. Next, log into Heroku and set up the remote.
+ * heroku login
+ * then enter details
+
+3. You then need to setup your Heroku Enivronment Variables and you can do this in two ways, either through the terminal or by navigating to Heroku.
+
+4. On navigating to the Heroku website, log in and select your app from the dashoboard.
+
+5. Choose settings and click on 'Reveal Config Vars' and insert the environment variables that are essential for your project to run. For example,
+   "IP - 0.0.0.0 PORT - 8080, STRIPE_SECRET_KEY , STRIPE_WH_KEY etc..
+
+6. Set up the databases by running the following management command in your terminal:
+    "python manage.py migrate"
+
+7. Create a superuser so you can have access to the django admin by running the following command in your terminal:
+    "python manage.py createsuperuser"
+
+8. Now that the server is running, we need to add the required data into the database in the following order:
+    1. "python manage.py loaddata itemtags.json"
+    2. "python manage.py loaddata items.json"
+    3. "python manage.py loaddata portfolio.json"
+
+9. Finally start your server by running the following management command in the terminal:
+    "python manage.py runserver" - If everything went correctly the terminal will provide a message telling that the development server is running at a provided URL mostly
+    PORT 8000.
+
+# Heroku deployment
+
+To run this application in a cloud-based environment, you can deploy the code to Heroku. 
+This section assumes you have succeeded at running the application in your local environment first, as described above.
+
+1. Login to Heroku and set up a new app with an unique name (NOTE: designdrop is already taken)
+
+2. On the Resources tab, in the Add-ons field type Heroku Postgres select the Hobby Dev then click the Provision button.
+
+3. After setting the Postgress database go back to the Settings tab and click Reveal Config Vars. Copy the values from your env.py file into Heroku. Make sure you load the following:
+    "Key	Value
+AWS_ACCESS_KEY_ID	<your_value>
+AWS_SECRET_ACCESS_KEY	<your_value>
+DATABASE_URL	<your_value>
+SECRET_KEY	<your_value>
+STRIPE_PUBLIC_KEY	<your_value>
+STRIPE_SECRET_KEY	<your_value>
+USE_AWS	<your_value>"
+
+ - Grab the DATABASE_URL link from Heroku's Config Vars as we gonna need it later to migrate to the Heroku Postgres database.
+
+4. Now that the database on Heroku is created the following rule needs to be added to the env.py file
+ - os.environ.setdefault('DATABASE_URL', '<your postgres url grabbed from Heroku>') - Be assured to not share this URL with anybody.
+
+5. Because this is a new database connection, the migrate command must be executed with the following command in your terminal:
+    "python manage.py makemigrations"
+    then - "python manage.py migrate"
+
+6. Create the superuser for the postgres database so you can have access to the django admin.
+ - python manage.py createsuperuser
+
+7. Now we need to add the required data into the database in the following order:
+    1. "python manage.py loaddata itemtags.json"
+    2. "python manage.py loaddata items.json"
+    3. "python manage.py loaddata portfolio.json"
+
+8. With everything set push the code to a GitHub account of yourself(also turn on automatic deployments on heroku settings, to link with your github repo)
+    " git push "
+    "git push heroku master"
+
+9. From the Heroku dashboard of your newly created application, click on the "Deploy" tab, then scroll down to the "Deployment method" section and select GitHub.
+
+10. Use the GitHub link and type in the name of the repository and click the search button. Then connect the Heroku app to the desired GitHub repository.
+
+11. On the Deployment Tab, scroll a bit further down to the "Manual Deploy" section, select the master branch then click "Deploy Branch".
+
+12. Once your application is running, you may want to update the Deployment method from Manual to Automatic
+
+13. From the Heroku dashboard select the Open app button on the top right. 
+
+14. The deployed project is now ready to be used.
+
+
+### Differences between Development and Deployed version
+
+<p>I set the debug to false for deployment.</p>
+
+# Credits 
+
+All text content for this system were written by me. 
+
