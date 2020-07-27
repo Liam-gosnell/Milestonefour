@@ -212,7 +212,7 @@ This code can be run locally or deployed to a live environment. Directions are b
 * AWS_S3 - Web based cloud storage service
 * Stripe - To securely collect credit card payments
 
-## ### How to install DESIGNDROP
+## How to install DESIGNDROP
 
 1. From your terminal enter git clone https://github.com/Liam-gosnell/Milestonefour to clone the project and download to your IDE
 
@@ -319,5 +319,18 @@ USE_AWS	<your_value>"
 
 # Credits 
 
-All text content for this system were written by me. 
+## Content 
+All the Portfolio descriptions and testimonials were written by Isobel Connors. All other content was written by me.
+
+## Media 
+
+The Team section images were taken from an example @ [bootstrap](https://getbootstrap.com/). All of the portfolio images I created myself 
+on [Canva](https://www.canva.com/). The services images were taken from canva also. The images on the main page were taken from 
+[Illustrations](https://illlustrations.co/).
+
+## Acknowledgements
+
+* [Django docs](https://www.djangoproject.com/).
+
+
 
