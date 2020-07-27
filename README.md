@@ -70,7 +70,7 @@ The contact section is there for people who need to know more information about 
 <p>By using Mockflow the following wireframes were created:</p>
 
 ![Wireframe pdf](https://raw.githubusercontent.com/Liam-gosnell/Milestonefour/master/wireframes/designdrop-main.pdf "About wireframe")
-
+![Wireframe pdf](https://raw.githubusercontent.com/Liam-gosnell/Milestonefour/master/wireframes/designdrop-main2.pdf "About wireframe")
 
 # Technologies
 
