@@ -656,12 +656,6 @@ input[name='q']::placeholder {
 
 /* -------------------------------- Media Queries */
 
-/* Slightly larger container on xl screens */
-@media (min-width: 1200px) {
-  .container {
-    max-width: 80%;
-  }
-}
 
 /* fixed top navbar only on medium and up */
 @media (min-width: 992px) {
@@ -677,6 +671,7 @@ input[name='q']::placeholder {
         padding-top: 105px;
     }
 }
+
 
 
 /* Mobile */
@@ -717,11 +712,7 @@ input[name='q']::placeholder {
     height: 92%!important;
 }
 .header-image {
-    background: url('/media/designdropmobile3.png') no-repeat center center fixed;
-}
-
-.my-auto {
-    margin-top: 360px!important;
+    background: url('/media/designmobile5.png') no-repeat center center fixed;
 }
 
 .col-lg-4 {
@@ -736,6 +727,9 @@ input[name='q']::placeholder {
     height: 30vh!important;
 }
 
+.padding-tablet {
+    margin-top: 486px!important;
+}
 
 .portfolio-spacing {
     margin: 0rem;
@@ -796,6 +790,8 @@ input[name='q']::placeholder {
     .header-image {
          background: url('/media/DesignDrop (5).png') no-repeat center center fixed;
     }
+
+   
 }
 
 
