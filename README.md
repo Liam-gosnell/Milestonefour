@@ -331,6 +331,8 @@ on [Canva](https://www.canva.com/). The services images were taken from canva al
 ## Acknowledgements
 
 * [Django docs](https://www.djangoproject.com/).
+* <p>Throughout this project I have sought support and guidance from Stack-Overflow, Code-Institue Slack Community, Tutors, W3Schools, CSS Tricks, YouTube videos.</p>
+* <p>I used styles from Bulma. I have clearly marked the borrowed code in my CSS.</p>
 
 
 
