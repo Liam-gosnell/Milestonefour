@@ -683,7 +683,7 @@ input[name='q']::placeholder {
 
 @media (max-width: 991px) {
   .margin-top-home {
-    margin-top: 45vh!important;
+    margin-top: 52vh!important;
 }
 
     body {
@@ -775,6 +775,10 @@ input[name='q']::placeholder {
 
 .margin-top-work-mobile {
     margin-top: 19vh!important;
+}
+
+.header-image {
+    background: url('/media/header-mobile.png') no-repeat center center fixed;
 }
 
 }
