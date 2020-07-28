@@ -185,7 +185,8 @@ on the portfolio section of the page as the images and information from the json
 variable names and different views. Another bug i came across was the header image on mobile, It would work perfectly , even when deployed to heroku
 but then once tested on a mobile device it would not show. To fix this is changed the image to a smallier image of itself and it finally worked on all devices.
 
-At the moment of deployment there are no bugs in the system and it should be working perfectly.
+At the moment of deployment there is one bug on tablet sized devices, the hamburger menu will not dropdown to display the main-mav.
+I plan to fix this bug once my project has been corrected.
 
 ## CSS
 
