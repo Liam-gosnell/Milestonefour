@@ -673,7 +673,7 @@ input[name='q']::placeholder {
         }
       }
 
-@media (max-width: 767px) 
+@media (max-width: 768px) 
 {
   .margin-top-home {
     margin-top: 62vh!important;
