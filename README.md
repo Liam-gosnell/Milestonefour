@@ -183,9 +183,8 @@ The following tests have been used to ensure proper site functionality:
 While developing thsi system I came across many bugs/problems along the way. The first problem that I encountered was correcting the 'for loop'
 on the portfolio section of the page as the images and information from the json files were not showing. I fixed that after some testing with different
 variable names and different views. Another bug i came across was the header image on mobile, It would work perfectly , even when deployed to heroku
-but then once tested on a mobile device it would not show. To fix this is changed the image to a smallier image of itself and it finally worked on all devices.
-
-At the moment of deployment there is one bug on tablet sized devices, the hamburger menu will not dropdown to display the main-mav.
+but then once tested on a mobile device it would not show. I have tried to fix this problem but havent found the right solution yet.
+At the moment of deployment there is a one bug on tablet sized devices, the hamburger menu will not dropdown to display the main-mav.
 I plan to fix this bug once my project has been corrected.
 
 ## CSS
