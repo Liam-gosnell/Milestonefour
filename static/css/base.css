@@ -672,29 +672,8 @@ input[name='q']::placeholder {
         }
       }
 
-/* @media only screen and (max-width: 600px) {
-     .header-container {
-        padding-top: 84px;
-    }
-    body {
-        height: calc(100vh - 116px);
-    }
-
-    .display-4 {
-        font-size: 2rem!important;
-    }
-
-    .margin-top-home {
-    margin-top: 36vh!important;
-}
-
-.list-inline-item:not(:last-child) {
-    margin-right: none!important;
-}
-
-} */
-
-@media (max-width: 991px) {
+@media (max-width: 991px) 
+{
   .margin-top-home {
     margin-top: 52vh!important;
 }
@@ -791,7 +770,8 @@ input[name='q']::placeholder {
 }
 
 .header-image {
-    background: url('/media/header-mobile.png') no-repeat center center fixed;
+    background: url('/media/header-mobile.png') no-repeat center 
+    center fixed;
 }
 
 }
