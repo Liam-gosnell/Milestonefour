@@ -770,7 +770,7 @@ input[name='q']::placeholder {
 }
 
 .header-image {
-    background: url('/media/header-mobile.png') no-repeat center center fixed; 
+    background: url('/media/header-mobile2.png') no-repeat center center fixed; 
     height: 100vh;
   -webkit-background-size: cover;
   -moz-background-size: cover;
