@@ -77,9 +77,10 @@ The contact section is there for people who need to know more information about 
 
 <img width="673" alt="Screenshot 2020-07-28 at 14 10 46" src="https://user-images.githubusercontent.com/54180917/88669915-625f0b80-d0dc-11ea-8884-d25983ccc4a1.png">
 
+<img width="857" alt="Screenshot 2020-07-28 at 14 13 56" src="https://user-images.githubusercontent.com/54180917/88670229-b36eff80-d0dc-11ea-8ef7-f01b95e14e76.png">
 
-![Wireframe pdf](https://raw.githubusercontent.com/Liam-gosnell/Milestonefour/master/wireframes/designdrop-main.pdf "About wireframe")
-![Wireframe pdf](https://raw.githubusercontent.com/Liam-gosnell/Milestonefour/master/wireframes/designdrop-main2.pdf "About wireframe")
+<img width="823" alt="Screenshot 2020-07-28 at 14 14 02" src="https://user-images.githubusercontent.com/54180917/88670249-b8cc4a00-d0dc-11ea-9f6a-81a3b476ed5b.png">
+
 
 # Technologies
 
