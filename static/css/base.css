@@ -51,23 +51,7 @@ p {
     cursor: pointer;
 }
 
-.btt-button {
-    height: 42px;
-    width: 42px;
-    position: fixed;
-    bottom: 10px;
-    right: 10px;
-}
 
-.btt-link,
-.update-link,
-.remove-item {
-    cursor: pointer;
-}
-
-input[name='q']::placeholder {
-    color: #aab7c4;
-}
 
 /* from Bulma */
 .icon {
@@ -305,6 +289,24 @@ input[name='q']::placeholder {
 .btn-black:hover {
   background-color: #fff;
   color: #000;
+}
+
+.btt-button {
+    height: 42px;
+    width: 42px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+.btt-link,
+.update-link,
+.remove-item {
+    cursor: pointer;
+}
+
+input[name='q']::placeholder {
+    color: #aab7c4;
 }
 
 .btn-black-services {
@@ -768,7 +770,7 @@ input[name='q']::placeholder {
 }
 
 .header-image {
-    background: url('/media/PHONEdesign.jpg') no-repeat center center fixed; 
+    background: url('/media/header-mobile2.png') no-repeat center center fixed; 
     height: 100vh;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -779,7 +781,7 @@ input[name='q']::placeholder {
 }
 
 
-@media only screen and (max-width: 1024px) and (min-width: 767px)
+@media only screen and (max-width: 1025px) and (min-width: 767px)
 {
   .margin-top-home {
     margin-top: 62vh!important;
@@ -874,13 +876,14 @@ input[name='q']::placeholder {
 }
 
 .header-image {
-    background: url('/media/designtablet2.png') no-repeat center center fixed; 
+    background: url('/media/tablet-image2.png') no-repeat center center fixed; 
     height: 100vh;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
+
 
 
 }
