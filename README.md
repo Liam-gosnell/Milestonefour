@@ -73,6 +73,11 @@ The contact section is there for people who need to know more information about 
 
 <p>By using Mockflow the following wireframes were created:</p>
 
+<img width="820" alt="Screenshot 2020-07-28 at 14 10 38" src="https://user-images.githubusercontent.com/54180917/88669863-55dab300-d0dc-11ea-9013-3fb10b02467e.png">
+
+<img width="673" alt="Screenshot 2020-07-28 at 14 10 46" src="https://user-images.githubusercontent.com/54180917/88669915-625f0b80-d0dc-11ea-8884-d25983ccc4a1.png">
+
+
 ![Wireframe pdf](https://raw.githubusercontent.com/Liam-gosnell/Milestonefour/master/wireframes/designdrop-main.pdf "About wireframe")
 ![Wireframe pdf](https://raw.githubusercontent.com/Liam-gosnell/Milestonefour/master/wireframes/designdrop-main2.pdf "About wireframe")
 
