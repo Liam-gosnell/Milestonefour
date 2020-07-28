@@ -874,7 +874,7 @@ input[name='q']::placeholder {
 }
 
 .header-image {
-    background: url('/media/designtablet.png') no-repeat center center fixed; 
+    background: url('/media/designtablet2.png') no-repeat center center fixed; 
     height: 100vh;
   -webkit-background-size: cover;
   -moz-background-size: cover;
