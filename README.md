@@ -1,6 +1,5 @@
 # Milestone-Four
 
-![tablet-image](https://user-images.githubusercontent.com/54180917/88668754-f039f700-d0da-11ea-8e37-6001ea29c22d.png)
 
 # DESIGNDROP
 <p>Stream Four Project: Full Stack Frameworks with Django - Code Institute<p>
@@ -11,6 +10,9 @@ showing the creators previous work as inspiration for companies that needed bran
 This Django based site is perfect for any Design agency looking to promote their own brand. This is a A system for employees to be more efficient, 
 and a system for customers to easily navigate through.
 </p>
+
+![designdropsmall1](https://user-images.githubusercontent.com/54180917/88669252-9423a280-d0db-11ea-8288-1b480f0bec0e.png)
+
 
 ## Demo 
 
