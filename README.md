@@ -1,6 +1,6 @@
 # Milestone-Four
 
-![Screenshot](screenshot.png)
+![tablet-image](https://user-images.githubusercontent.com/54180917/88668754-f039f700-d0da-11ea-8e37-6001ea29c22d.png)
 
 # DESIGNDROP
 <p>Stream Four Project: Full Stack Frameworks with Django - Code Institute<p>
