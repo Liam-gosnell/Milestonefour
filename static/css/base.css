@@ -779,7 +779,7 @@ input[name='q']::placeholder {
 }
 
 
-@media (min-width: 767px) 
+@media only screen and (max-width: 1024px) and (min-width: 767px)
 {
   .margin-top-home {
     margin-top: 62vh!important;
@@ -871,6 +871,15 @@ input[name='q']::placeholder {
 
 .margin-top-portfolio {
      margin-top: 0!important; 
+}
+
+.header-image {
+    background: url('/media/designtablet.png') no-repeat center center fixed; 
+    height: 100vh;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 
