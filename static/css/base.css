@@ -704,7 +704,6 @@ input[name='q']::placeholder {
         font-size: .9rem;
     }
 
-
     #services{
         padding-top: 60px!important;
     }
@@ -773,7 +772,7 @@ input[name='q']::placeholder {
 
 .header-image {
     background: url('/media/header-mobile3.png') no-repeat center center fixed; 
-    height: 100vh;
+    max-height: 823px;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -781,6 +780,8 @@ input[name='q']::placeholder {
 }
 
 }
+
+
 
 
 
