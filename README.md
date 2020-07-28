@@ -1,6 +1,5 @@
 # Milestone-Four
 
-![Screenshot](screenshot.png)
 
 # DESIGNDROP
 <p>Stream Four Project: Full Stack Frameworks with Django - Code Institute<p>
@@ -11,6 +10,9 @@ showing the creators previous work as inspiration for companies that needed bran
 This Django based site is perfect for any Design agency looking to promote their own brand. This is a A system for employees to be more efficient, 
 and a system for customers to easily navigate through.
 </p>
+
+![designdropsmall1](https://user-images.githubusercontent.com/54180917/88669252-9423a280-d0db-11ea-8288-1b480f0bec0e.png)
+
 
 ## Demo 
 
@@ -71,8 +73,14 @@ The contact section is there for people who need to know more information about 
 
 <p>By using Mockflow the following wireframes were created:</p>
 
-![Wireframe pdf](https://raw.githubusercontent.com/Liam-gosnell/Milestonefour/master/wireframes/designdrop-main.pdf "About wireframe")
-![Wireframe pdf](https://raw.githubusercontent.com/Liam-gosnell/Milestonefour/master/wireframes/designdrop-main2.pdf "About wireframe")
+<img width="820" alt="Screenshot 2020-07-28 at 14 10 38" src="https://user-images.githubusercontent.com/54180917/88669863-55dab300-d0dc-11ea-9013-3fb10b02467e.png">
+
+<img width="673" alt="Screenshot 2020-07-28 at 14 10 46" src="https://user-images.githubusercontent.com/54180917/88669915-625f0b80-d0dc-11ea-8884-d25983ccc4a1.png">
+
+<img width="857" alt="Screenshot 2020-07-28 at 14 13 56" src="https://user-images.githubusercontent.com/54180917/88670229-b36eff80-d0dc-11ea-8ef7-f01b95e14e76.png">
+
+<img width="823" alt="Screenshot 2020-07-28 at 14 14 02" src="https://user-images.githubusercontent.com/54180917/88670249-b8cc4a00-d0dc-11ea-9f6a-81a3b476ed5b.png">
+
 
 # Technologies
 
